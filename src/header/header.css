@@ -1,0 +1,17 @@
+.navbarList {
+	list-style-type: none;
+	margin: 0;
+	padding: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	background-color: #25262c00;
+	color: white;
+	width: 100vw;
+	column-gap: 30px;
+}
+
+.navSectionRight {
+	display: flex;
+}

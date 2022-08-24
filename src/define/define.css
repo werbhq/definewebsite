@@ -1,0 +1,118 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "ClashDisplay-Variable";
+}
+
+@font-face {
+	font-family: "ClashDisplay-Variable";
+	src: local("ClashDisplay-Variable"),
+		url("./../fonts/ClashDisplay-Variable.ttf") format("truetype");
+	font-weight: 200 700;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ClashDisplay-Extralight";
+	src: local("ClashDisplay-Extralight")
+		url("../fonts/ClashDisplay-Extralight.otf") format("opentype");
+	font-weight: 200;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ClashDisplay-Light";
+	src: local("ClashDisplay-Light") url("../fonts/ClashDisplay-Light.otf")
+		format("opentype");
+	font-weight: 300;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ClashDisplay-Regular";
+	src: local("ClashDisplay-Regular") url("../fonts/ClashDisplay-Regular.otf")
+		format("opentype");
+	font-weight: 400;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ClashDisplay-Medium";
+	src: local("ClashDisplay-Medium") url("../fonts/ClashDisplay-Medium.otf")
+		format("opentype");
+	font-weight: 500;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ClashDisplay-Semibold";
+	src: local("ClashDisplay-Semibold") url("../fonts/ClashDisplay-Semibold.otf")
+		format("opentype");
+	font-weight: 600;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ClashDisplay-Bold";
+	src: local("ClashDisplay-Bold") url("../fonts/ClashDisplay-Bold.otf")
+		format("opentype");
+	font-weight: 700;
+	font-display: swap;
+	font-style: normal;
+}
+
+.Define {
+	background-color: #25262c;
+	width: 100vw;
+	height: 110vh;
+	overflow-y: scroll;
+}
+
+.plainNoise {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	width: 100vw;
+	height: 100vh;
+
+	background: url("./../Plain\ Noise.png");
+	mix-blend-mode: color-dodge;
+}
+
+.plasticTexture {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	width: 100vw;
+	height: 100vh;
+
+	background: url("./../Plastic\ Texture.png");
+	mix-blend-mode: soft-light;
+	/* transform: rotate(90deg); */
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 30px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background-color: #fb2a9b;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #ecf016;
+}
