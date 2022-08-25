@@ -7,14 +7,14 @@
 	color: #ecf016;
 	cursor: pointer;
 	display: inline-block;
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 500;
 	line-height: normal;
 	margin: 0;
-	min-height: 50px;
+	min-height: 35px;
 	min-width: 0;
 	outline: none;
-	padding: 16px 28px;
+	padding: 12px 28px;
 	text-align: center;
 	text-decoration: none;
 	transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -22,6 +22,10 @@
 	-webkit-user-select: none;
 	touch-action: manipulation;
 	will-change: transform;
+	display: flex;
+	flex-direction: row;
+	column-gap: 10px;
+	align-items: center;
 }
 
 .hUIButton:disabled {
@@ -38,4 +42,9 @@
 .hUIButton:active {
 	box-shadow: none;
 	transform: translateY(0);
+}
+
+.hUIButton .icon {
+	width: 26px;
+	height: 26px;
 }
