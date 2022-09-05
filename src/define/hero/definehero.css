@@ -12,6 +12,11 @@
 }
 
 .tagline {
-	font-family: "coolvetica-rg", sans-serif;
-	font-style: italic;
+	font-family: "coolvetica-rg";
+	text-align: left;
+}
+
+.titlesponsor {
+	font-family: "coolvetica-rg";
+	text-transform: uppercase;
 }

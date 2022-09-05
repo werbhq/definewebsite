@@ -1,9 +1,15 @@
-* {
+html,
+body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "coolvetica-rg";
+	font-family: "ClashDisplay-variable";
 	text-align: start;
+}
+
+* {
+	margin: 0;
+	padding: 0;
 }
 
 :root {
@@ -85,11 +91,7 @@
 
 @font-face {
 	font-family: "coolvetica-rg";
-	src: local("coolvetica-rg")
-		url("../assets/fonts/coolvetica/coolvetica\ rg.otf");
-	font-weight: 700;
-	font-display: swap;
-	font-style: normal;
+	src: url("../assets/fonts/coolvetica/coolvetica\ rg.otf");
 }
 
 .Define h1 {
@@ -98,17 +100,21 @@
 }
 
 .Define h3 {
-	font-size: 4vw;
+	font-size: 3vw;
+	line-height: 95%;
+	letter-spacing: 2px;
 }
 
 .Define h6 {
-	font-size: 2vw;
+	font-size: 1.5vw;
 }
 
 .Define {
 	background-color: var(--blasphemous-black);
 	width: 100vw;
 	height: 100vh;
+	margin: 0;
+	padding: 0;
 	/* overflow-y: scroll; */
 }
 

@@ -9,7 +9,7 @@ function DefineHero() {
 				<h3 className="tagline">
 					<span>build for the</span>
 					<span className="youthfulYellowFG">
-						<br></br> real world.
+						<br /> real world.
 					</span>
 				</h3>
 			</div>
