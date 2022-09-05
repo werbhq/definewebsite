@@ -2,13 +2,23 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "ClashDisplay-Variable";
+	font-family: "coolvetica-rg";
+	text-align: start;
+}
+
+:root {
+	--youthful-yellow: #ecf016;
+	--whitty-white: #ffffff;
+	--proud-pink: #fb2a9b;
+	--brilliant-blue: #0075ff;
+	--blasphemous-black: #25262c;
 }
 
 @font-face {
 	font-family: "ClashDisplay-Variable";
 	src: local("ClashDisplay-Variable"),
-		url("./../assets/fonts/ClashDisplay-Variable.ttf") format("truetype");
+		url("./../assets/fonts/ClashDisplay/ClashDisplay-Variable.ttf")
+			format("truetype");
 	font-weight: 200 700;
 	font-display: swap;
 	font-style: normal;
@@ -17,7 +27,8 @@
 @font-face {
 	font-family: "ClashDisplay-Extralight";
 	src: local("ClashDisplay-Extralight")
-		url("../assets/fonts/ClashDisplay-Extralight.otf") format("opentype");
+		url("../assets/fonts/ClashDisplay/ClashDisplay-Extralight.otf")
+		format("opentype");
 	font-weight: 200;
 	font-display: swap;
 	font-style: normal;
@@ -25,7 +36,8 @@
 
 @font-face {
 	font-family: "ClashDisplay-Light";
-	src: local("ClashDisplay-Light") url("../assets/fonts/ClashDisplay-Light.otf")
+	src: local("ClashDisplay-Light")
+		url("../assets/fonts/ClashDisplay/ClashDisplay-Light.otf")
 		format("opentype");
 	font-weight: 300;
 	font-display: swap;
@@ -35,7 +47,8 @@
 @font-face {
 	font-family: "ClashDisplay-Regular";
 	src: local("ClashDisplay-Regular")
-		url("../assets/fonts/ClashDisplay-Regular.otf") format("opentype");
+		url("../assets/fonts/ClashDisplay/ClashDisplay-Regular.otf")
+		format("opentype");
 	font-weight: 400;
 	font-display: swap;
 	font-style: normal;
@@ -44,7 +57,8 @@
 @font-face {
 	font-family: "ClashDisplay-Medium";
 	src: local("ClashDisplay-Medium")
-		url("../assets/fonts/ClashDisplay-Medium.otf") format("opentype");
+		url("../assets/fonts/ClashDisplay/ClashDisplay-Medium.otf")
+		format("opentype");
 	font-weight: 500;
 	font-display: swap;
 	font-style: normal;
@@ -53,7 +67,8 @@
 @font-face {
 	font-family: "ClashDisplay-Semibold";
 	src: local("ClashDisplay-Semibold")
-		url("../assets/fonts/ClashDisplay-Semibold.otf") format("opentype");
+		url("../assets/fonts/ClashDisplay/ClashDisplay-Semibold.otf")
+		format("opentype");
 	font-weight: 600;
 	font-display: swap;
 	font-style: normal;
@@ -61,18 +76,44 @@
 
 @font-face {
 	font-family: "ClashDisplay-Bold";
-	src: local("ClashDisplay-Bold") url("../assets/fonts/ClashDisplay-Bold.otf")
-		format("opentype");
+	src: local("ClashDisplay-Bold")
+		url("../assets/fonts/ClashDisplay/ClashDisplay-Bold.otf") format("opentype");
 	font-weight: 700;
 	font-display: swap;
 	font-style: normal;
 }
 
+@font-face {
+	font-family: "coolvetica-rg";
+	src: local("coolvetica-rg")
+		url("../assets/fonts/coolvetica/coolvetica\ rg.otf");
+	font-weight: 700;
+	font-display: swap;
+	font-style: normal;
+}
+
+.Define h1 {
+	font-size: 12vw;
+	font-weight: 600;
+}
+
+.Define h3 {
+	font-size: 4vw;
+}
+
+.Define h6 {
+	font-size: 2vw;
+}
+
 .Define {
-	background-color: #25262c;
+	background-color: var(--blasphemous-black);
 	width: 100vw;
 	height: 100vh;
 	/* overflow-y: scroll; */
+}
+
+.Define .youthfulYellowFG {
+	color: var(--youthful-yellow);
 }
 
 .plainNoise {
@@ -111,10 +152,10 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-	background-color: #fb2a9b;
+	background-color: var(--proud-pink);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: #ecf016;
+	background: var(--youthful-yellow);
 }
