@@ -1,3 +1,4 @@
+import HUIButton from "../../components/button/button";
 import "./../hero/definehero.css";
 
 function DefineHero() {
@@ -12,6 +13,9 @@ function DefineHero() {
 						<br /> real world.
 					</span>
 				</h3>
+
+				<br />
+				<HUIButton text="Coming Soon" icon="go"></HUIButton>
 			</div>
 		</div>
 	);

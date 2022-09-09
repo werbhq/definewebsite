@@ -5,7 +5,7 @@ function HUIButton(props) {
 	return (
 		<button className="hUIButton">
 			{props.text}
-			<Icon icon="mail" color="#ecf016"></Icon>
+			<Icon icon={props.icon} color="#ecf016"></Icon>
 		</button>
 	);
 }
