@@ -1,6 +1,6 @@
 .hero {
 	/* background-color: aquamarine; */
-	padding: 100px 100px;
+	padding: 150px 100px;
 	color: var(--whitty-white);
 	min-height: 75vh;
 	display: flex;

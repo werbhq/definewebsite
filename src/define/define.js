@@ -6,7 +6,7 @@ import DefineAbout from "./about/about";
 function Define() {
 	return (
 		<div className="Define">
-			{/* <Header></Header> */}
+			<Header></Header>
 			<div className="plasticTexture"></div>
 			{/* <div className="glitchTexture"></div> */}
 			<div className="plainNoise"></div>
