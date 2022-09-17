@@ -36,6 +36,7 @@
 
 .titlesponsor {
 	font-family: "coolvetica-rg";
+	letter-spacing: 1px;
 	text-transform: uppercase;
 	background-color: black;
 	display: inline-block;
