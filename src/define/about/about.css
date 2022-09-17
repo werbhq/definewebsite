@@ -1,5 +1,6 @@
-.hero {
+.defineAbout {
 	/* background-color: aquamarine; */
+	/* margin: 0px 100px; */
 	padding: 100px 100px;
 	color: var(--whitty-white);
 	min-height: 75vh;
@@ -7,38 +8,44 @@
 	flex-direction: row;
 	align-items: center;
 	row-gap: 20px;
-	background-color: var(--blasphemous-black);
+	background-color: var(--proud-pink);
 	/* justify-content: space-between; */
 }
 
-.heroSectionA {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	width: 100%;
-}
-
-.heroSectionB {
-	display: block;
-	width: 100%;
-	transform: translate(50px);
-
-	/* background-color: aquamarine; */
-}
-
-.hero .heroSectionB {
-	mix-blend-mode: lighten;
-}
-
-.heroSectionB img {
-	width: 100%;
-}
-
-.tagline {
+.defineAbout .mainheading {
 	font-family: "coolvetica-rg";
 	font-weight: 100;
-	letter-spacing: 0px !important;
+	line-height: 80%;
+}
+
+.defineAbout .subheading {
+	font-family: "coolvetica-rg";
+	letter-spacing: 0;
+	font-weight: 100;
+	line-height: 80%;
+}
+
+.defineAbout .description {
+	font-family: "coolvetica-rg";
+	font-weight: 100;
+	letter-spacing: 0px;
 	text-align: left;
+}
+
+.defineAbout .benefits {
+	font-family: "coolvetica-rg";
+	font-weight: 100;
+	text-align: left;
+}
+
+.defineAbout ul {
+	list-style: none;
+}
+
+.defineAbout li {
+	background: url("./../../assets/images/Bullet.svg") no-repeat left center;
+	padding-left: 24px; /* the width of your image + some space */
+	margin: 5px 0;
 }
 
 .titlesponsor {
@@ -56,23 +63,10 @@
 }
 
 @media screen and (max-width: 768px) {
-	.hero {
+	.defineAbout {
 		/* background-color: aqua; */
 		padding: 100px 0px;
 		flex-direction: column;
-	}
-
-	.heroSectionA {
-		order: 1;
-		display: inline-flex;
-		width: fit-content;
-		/* background-color: aquamarine; */
-	}
-
-	.heroSectionB {
-		order: 0;
-		width: 50%;
-		transform: translate(0px);
 	}
 
 	.buttonContainer {

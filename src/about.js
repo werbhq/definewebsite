@@ -1,5 +1,4 @@
 import "./about.css";
-import AboutHero from "./abouthero.js";
 
 function About() {
 	return (
@@ -7,7 +6,6 @@ function About() {
 			{/* <Header></Header> */}
 			<div className="plasticTexture"></div>
 			<div className="plainNoise"></div>
-			<AboutHero></AboutHero>
 		</div>
 	);
 }

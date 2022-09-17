@@ -1,8 +1,7 @@
 import Header from "./../header/header.js";
 import "./define.css";
 import DefineHero from "./hero/definehero.js";
-import About from "./../about";
-import HUIButton from "../components/button/button.js";
+import DefineAbout from "./about/about";
 
 function Define() {
 	return (
@@ -12,7 +11,7 @@ function Define() {
 			{/* <div className="glitchTexture"></div> */}
 			<div className="plainNoise"></div>
 			<DefineHero></DefineHero>
-			<About></About>
+			<DefineAbout></DefineAbout>
 			{/* <HUIButton text="Coming Soon" icon="go"></HUIButton> */}
 		</div>
 	);
