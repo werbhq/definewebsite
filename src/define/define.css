@@ -91,6 +91,7 @@ body {
 
 @font-face {
 	font-family: "coolvetica-rg";
+	font-weight: 500;
 	src: url("../assets/fonts/coolvetica/coolvetica\ rg.otf");
 }
 
@@ -167,6 +168,24 @@ body {
 	mix-blend-mode: soft-light;
 	/* transform: rotate(90deg); */
 }
+
+/* .glitchTexture {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 100%;
+	user-select: none;
+	pointer-events: none;
+
+	background: url("./../assets/images/glitchoverlay1.gif");
+	background-repeat: repeat;
+	background-size: 100%;
+	opacity: 20%;
+	mix-blend-mode: color-dodge;
+} */
 
 /* width */
 ::-webkit-scrollbar {

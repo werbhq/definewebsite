@@ -9,6 +9,7 @@ function Define() {
 		<div className="Define">
 			{/* <Header></Header> */}
 			<div className="plasticTexture"></div>
+			{/* <div className="glitchTexture"></div> */}
 			<div className="plainNoise"></div>
 			<DefineHero></DefineHero>
 			<About></About>

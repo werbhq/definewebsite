@@ -34,12 +34,15 @@
 
 .tagline {
 	font-family: "coolvetica-rg";
+	font-weight: 100;
+	letter-spacing: 0px !important;
 	text-align: left;
 }
 
 .titlesponsor {
 	font-family: "coolvetica-rg";
-	letter-spacing: 1px;
+	font-weight: 100;
+	letter-spacing: 0px;
 	text-transform: uppercase;
 	background-color: black;
 	display: inline-block;
