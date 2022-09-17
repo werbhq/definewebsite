@@ -38,6 +38,7 @@
 	border: none;
 	font-family: "coolvetica-rg", sans-serif;
 	line-height: 110%;
+	transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .defineButtonSecondary {
@@ -46,6 +47,7 @@
 	border: 2px solid var(--youthful-yellow);
 	font-family: "coolvetica-rg", sans-serif;
 	line-height: 110%;
+	transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .hUIButton:disabled {
@@ -59,25 +61,15 @@
 	transform: translateY(-2px);
 }
 
-.defineButton:hover {
-	/* background-color: var(--brilliant-blue);
-	color: var(--witty-white); */
-	background: rgb(240, 243, 77);
-	background: linear-gradient(
-		135deg,
-		rgba(240, 243, 77, 1) 100%,
-		rgba(236, 240, 22, 1) 100%
-	);
-	box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px, inset 0 0 10px 0px #fff;
-	transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
-
-	/* transform: translateY(-2px); */
+.defineButtonPrimary:hover {
+	box-shadow: 0px 5px var(--proud-pink);
+	transform: translateY(-5px);
 }
 
-/* .hUIButton:active {
-	box-shadow: none;
-	transform: translateY(0);
-} */
+.defineButtonSecondary:hover {
+	box-shadow: 0px 5px var(--youthful-yellow);
+	transform: translateY(-5px);
+}
 
 .hUIButton .icon {
 	min-width: 20px;
