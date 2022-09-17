@@ -22,6 +22,8 @@
 	column-gap: 10px;
 	align-items: center;
 	justify-content: center;
+
+	-webkit-tap-highlight-color: transparent;
 }
 
 .hashButton {
@@ -30,10 +32,18 @@
 	border: 2px solid var(--youthful-yellow);
 }
 
-.defineButton {
+.defineButtonPrimary {
 	background-color: var(--youthful-yellow);
 	color: var(--blasphemous-black);
 	border: none;
+	font-family: "coolvetica-rg", sans-serif;
+	line-height: 110%;
+}
+
+.defineButtonSecondary {
+	background-color: transparent;
+	color: var(--youthful-yellow);
+	border: 2px solid var(--youthful-yellow);
 	font-family: "coolvetica-rg", sans-serif;
 	line-height: 110%;
 }
@@ -70,6 +80,12 @@
 } */
 
 .hUIButton .icon {
-	width: 26px;
-	height: 26px;
+	min-width: 20px;
+	min-height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+	.hUIButton {
+		width: 100%;
+	}
 }

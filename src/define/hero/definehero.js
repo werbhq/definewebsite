@@ -16,7 +16,23 @@ function DefineHero() {
 				</h3>
 
 				<br />
-				<HUIButton text="Coming Soon" icon="go" event="define"></HUIButton>
+				<div className="buttonContainer">
+					<HUIButton
+						text="Coming Soon"
+						icon="go"
+						event="define"
+						type="Primary"
+						color="#25262c"
+					></HUIButton>
+					<br />
+					<HUIButton
+						text="Stay Tuned"
+						icon="mail"
+						event="define"
+						type="Secondary"
+						color="#ecf016"
+					></HUIButton>
+				</div>
 			</div>
 			<div className="heroSectionB">
 				<img src={LightBulbImage} alt="" />
