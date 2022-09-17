@@ -2,8 +2,8 @@ import "./abouthero.css";
 
 function AboutHero() {
 	return (
-		<div className="hero">
-			<div className="herosectiona">
+		<div className="defineAbout">
+			<div className="defineAboutSectionA">
 				{/* <img
           className="sideimage"
           alt=""

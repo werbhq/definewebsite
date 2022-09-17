@@ -3,9 +3,9 @@ import Icon from "./../icon/icon";
 
 function HUIButton(props) {
 	return (
-		<button className="hUIButton">
+		<button className={"hUIButton " + props.event + "Button"}>
 			{props.text}
-			<Icon icon={props.icon} color="#ecf016"></Icon>
+			<Icon icon={props.icon} color={props.color}></Icon>
 		</button>
 	);
 }
