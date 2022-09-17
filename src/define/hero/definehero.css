@@ -8,6 +8,7 @@
 	flex-direction: row;
 	align-items: center;
 	row-gap: 20px;
+	background-color: var(--blasphemous-black);
 	/* justify-content: space-between; */
 }
 
@@ -22,6 +23,8 @@
 	display: block;
 	width: 100%;
 	transform: translate(50px);
+	mix-blend-mode: lighten;
+
 	/* background-color: aquamarine; */
 }
 

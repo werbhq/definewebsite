@@ -1,6 +1,6 @@
 import HUIButton from "../../components/button/button";
 import "./../hero/definehero.css";
-import LightBulbImage from "./../../assets/images/lightBulbDefine.svg";
+import LightBulbImage from "./../../assets/images/defineLightBulbVideo.gif";
 
 function DefineHero() {
 	return (
