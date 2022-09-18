@@ -9,7 +9,10 @@
 	box-sizing: border-box;
 	column-gap: 20px;
 	/* background-color: blue; */
-	max-width: 100%;
+	flex-shrink: 1;
+	width: 100%;
+	max-width: 70%;
+	/* max-width: 100%; */
 }
 
 .hamburger {
@@ -44,6 +47,7 @@
 	padding: 70px 100px;
 	font-size: 20px;
 	width: 100vw;
+
 	justify-content: space-between;
 
 	/* background-color: aqua; */
@@ -68,5 +72,27 @@
 
 	.header {
 		padding: 70px 50px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+	.hashLogoDesktop {
+		display: block;
+	}
+
+	.hashLogoMobile {
+		display: none;
+	}
+
+	.hamburger {
+		display: block;
+	}
+
+	.navbarList {
+		display: none;
+	}
+
+	.header {
+		padding: 70px 100px;
 	}
 }

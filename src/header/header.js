@@ -17,7 +17,7 @@ function Header() {
 				<ul className="navbarList">
 					<img className="defineLogoContainer" src={defineLogo}></img>
 					<li>Schedule</li>
-					{/* <li>FAQs</li> */}
+					<li>FAQs</li>
 					<li>Contact</li>
 					<HUIButton
 						text="Coming Soon!"
