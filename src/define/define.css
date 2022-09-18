@@ -5,12 +5,13 @@ body {
 	box-sizing: border-box;
 	font-family: "ClashDisplay-variable";
 	text-align: start;
-	/* overflow: hidden; */
+	overflow: hidden;
 }
 
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 :root {
@@ -122,17 +123,13 @@ body {
 
 .Define {
 	background-color: var(--blasphemous-black);
-	/* position: relative; */
+	position: relative;
 	width: 100vw;
 	height: 100vh;
 	margin: 0;
 	padding: 0;
 	cursor: url("./../assets/images/CursorDefault.svg"), default;
 	overflow-y: scroll;
-}
-
-.Smaller {
-	background-color: #0075ff !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -166,7 +163,7 @@ body {
 }
 
 .plainNoise {
-	position: absolute;
+	position: fixed;
 	left: 0px;
 	right: 0px;
 	top: 0px;
@@ -185,7 +182,7 @@ body {
 }
 
 .plasticTexture {
-	position: absolute;
+	position: fixed;
 	left: 0px;
 	right: 0px;
 	top: 0px;
@@ -225,6 +222,7 @@ body {
 }
 ::-webkit-scrollbar {
 	display: none;
+	z-index: 998;
 }
 
 @media (hover: hover) {
@@ -232,6 +230,7 @@ body {
 	::-webkit-scrollbar {
 		width: 20px;
 		display: block;
+		z-index: 999;
 	}
 
 	/* Track */

@@ -3,11 +3,13 @@ import "./define.css";
 import DefineHero from "./hero/definehero.js";
 import DefineAbout from "./about/about";
 import DefineTheme from "./theme/theme.js";
+import Navbar from "./../components/navbar/navbar.js";
 
 function Define() {
 	return (
 		<div className="Define">
 			<Header></Header>
+			{/* <Navbar></Navbar> */}
 			<div className="plasticTexture"></div>
 			{/* <div className="glitchTexture"></div> */}
 			<div className="plainNoise"></div>

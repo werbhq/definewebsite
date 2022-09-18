@@ -69,10 +69,11 @@
 	/* padding: 30px; */
 	max-height: 90px;
 	mix-blend-mode: overlay;
+	margin: -20px;
 }
 
 .header {
-	position: absolute;
+	position: fixed;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -80,27 +81,27 @@
 	padding: 50px 100px;
 	font-size: 20px;
 	width: 100vw;
-	z-index: 997;
-
+	z-index: 993;
+	top: 0;
 	justify-content: space-between;
 
 	/* background-color: aqua; */
 }
 
 @media screen and (max-width: 768px) {
-	.hashLogoDesktop {
+	.header .hashLogoDesktop {
 		display: none;
 	}
 
-	.hashLogoMobile {
+	.header .hashLogoMobile {
 		display: block;
 	}
 
-	.hamburger {
+	.header .hamburger {
 		display: block;
 	}
 
-	.navbarList {
+	.header .navbarList {
 		display: none;
 	}
 
@@ -110,19 +111,19 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1060px) {
-	.hashLogoDesktop {
+	.header .hashLogoDesktop {
 		display: block;
 	}
 
-	.hashLogoMobile {
+	.header .hashLogoMobile {
 		display: none;
 	}
 
-	.hamburger {
+	.header .hamburger {
 		display: block;
 	}
 
-	.navbarList {
+	.header .navbarList {
 		display: none;
 		z-index: 2;
 	}
