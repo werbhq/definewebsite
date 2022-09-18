@@ -12,8 +12,7 @@
 	flex-shrink: 1;
 	width: 100%;
 	max-width: 70%;
-	isolation: isolate;
-	z-index: 2;
+	z-index: 30;
 
 	/* max-width: 100%; */
 }
@@ -26,6 +25,9 @@
 	left: 0;
 	right: 0;
 	z-index: 1;
+	backdrop-filter: blur(200px);
+	mask: linear-gradient(black 60%, transparent);
+
 	/* background: rgb(37, 38, 44);
 	background: linear-gradient(
 		0deg,
@@ -42,28 +44,31 @@
 
 .hamburger {
 	display: none;
+	z-index: 3;
 }
 
 .navSectionRight {
 	display: flex;
 }
 
+.navSectionLeft {
+	z-index: 3;
+}
+
 .hashLogoDesktop {
 	/* padding: 30px; */
 	max-height: 100px;
-	z-index: 2;
 }
 
 .hashLogoMobile {
 	max-height: 100px;
 	display: none;
-	z-index: 2;
 }
 
 .defineLogoContainer {
 	/* padding: 30px; */
 	max-height: 90px;
-	z-index: 2;
+	mix-blend-mode: overlay;
 }
 
 .header {
@@ -85,22 +90,18 @@
 @media screen and (max-width: 768px) {
 	.hashLogoDesktop {
 		display: none;
-		z-index: 2;
 	}
 
 	.hashLogoMobile {
 		display: block;
-		z-index: 2;
 	}
 
 	.hamburger {
 		display: block;
-		z-index: 2;
 	}
 
 	.navbarList {
 		display: none;
-		z-index: 2;
 	}
 
 	.header {
@@ -111,17 +112,14 @@
 @media screen and (min-width: 768px) and (max-width: 1060px) {
 	.hashLogoDesktop {
 		display: block;
-		z-index: 2;
 	}
 
 	.hashLogoMobile {
 		display: none;
-		z-index: 2;
 	}
 
 	.hamburger {
 		display: block;
-		z-index: 2;
 	}
 
 	.navbarList {

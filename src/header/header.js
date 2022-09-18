@@ -12,7 +12,7 @@ function Header() {
 	return (
 		<div>
 			<div className={"header " + sizeClass}>
-				<div>
+				<div className="navSectionLeft">
 					<img className="hashLogoDesktop" src={hashLogo}></img>
 					<img className="hashLogoMobile" src={hashIcon}></img>
 				</div>
