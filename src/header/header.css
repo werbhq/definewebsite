@@ -26,15 +26,15 @@
 	right: 0;
 	z-index: 1;
 	backdrop-filter: blur(200px);
+	filter: blur(80px);
 	mask: linear-gradient(black 60%, transparent);
 
-	/* background: rgb(37, 38, 44);
+	background: rgb(37, 38, 44);
 	background: linear-gradient(
 		0deg,
 		rgba(37, 38, 44, 0) 0%,
-		rgba(37, 38, 44, 0.8886905103838411) 61%
+		rgba(37, 38, 44, 0.247) 100%
 	);
-	mix-blend-mode: difference; */
 }
 
 .navbarList li:hover {

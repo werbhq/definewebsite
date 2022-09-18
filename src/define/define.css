@@ -161,6 +161,10 @@ body {
 	color: var(--youthful-yellow);
 }
 
+.Define .brilliantBlueFG {
+	color: var(--brilliant-blue);
+}
+
 .plainNoise {
 	position: absolute;
 	left: 0px;

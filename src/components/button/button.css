@@ -63,14 +63,14 @@
 	pointer-events: none;
 }
 
-.hashButton:hover {
-	color: #fff;
-	background-color: #1a1a1a;
-	box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-	transform: translateY(-2px);
-}
-
 @media (hover: hover) {
+	.hashButton:hover {
+		color: #fff;
+		background-color: #1a1a1a;
+		box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+		transform: translateY(-2px);
+	}
+
 	.defineButtonPrimary:hover {
 		box-shadow: 0px 8px var(--proud-pink);
 		transform: translateY(-3px);

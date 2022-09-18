@@ -1,69 +1,55 @@
-.defineAbout {
+.defineTheme {
 	/* background-color: aquamarine; */
 	/* margin: 0px 100px; */
 	padding: 100px 100px;
-	color: var(--whitty-white);
+	color: var(--blasphemous-black);
 	min-height: 75vh;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	row-gap: 20px;
-	background-color: var(--proud-pink);
+	background-color: var(--whitty-white);
 	/* justify-content: space-between; */
 }
 
-.defineAbout .mainheading {
+.defineTheme .mainheading {
 	font-family: "coolvetica-rg";
 	font-weight: 100;
 	line-height: 80%;
 }
 
-.defineAbout .subheading {
+.defineTheme .subheading {
 	font-family: "coolvetica-rg";
 	letter-spacing: 0;
 	font-weight: 100;
 	line-height: 80%;
 }
 
-.defineAbout .description {
+.defineTheme .description {
 	font-family: "coolvetica-rg";
 	font-weight: 100;
 	letter-spacing: 0px;
 	text-align: left;
 }
 
-.defineAbout .benefits {
+.defineTheme .benefits {
 	font-family: "coolvetica-rg";
 	font-weight: 100;
 	text-align: left;
 }
 
-.defineAbout ul {
+.defineTheme ul {
 	list-style: none;
 }
 
-.defineAbout li {
+.defineTheme li {
 	background: url("./../../assets/images/Bullet.svg") no-repeat left center;
 	padding-left: 24px; /* the width of your image + some space */
 	margin: 5px 0;
 }
 
-.titlesponsor {
-	font-family: "coolvetica-rg";
-	font-weight: 100;
-	letter-spacing: 0px;
-	text-transform: uppercase;
-	background-color: black;
-	display: inline-block;
-}
-
-.buttonContainer {
-	display: flex;
-	column-gap: 10px;
-}
-
 @media screen and (max-width: 768px) {
-	.defineAbout {
+	.defineTheme {
 		/* background-color: aqua; */
 		padding: 100px 25px;
 		flex-direction: column;

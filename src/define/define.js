@@ -2,6 +2,7 @@ import Header from "./../header/header.js";
 import "./define.css";
 import DefineHero from "./hero/definehero.js";
 import DefineAbout from "./about/about";
+import DefineTheme from "./theme/theme.js";
 
 function Define() {
 	return (
@@ -12,6 +13,7 @@ function Define() {
 			<div className="plainNoise"></div>
 			<DefineHero></DefineHero>
 			<DefineAbout></DefineAbout>
+			<DefineTheme></DefineTheme>
 			{/* <HUIButton text="Coming Soon" icon="go"></HUIButton> */}
 		</div>
 	);
