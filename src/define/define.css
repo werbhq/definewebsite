@@ -5,6 +5,7 @@ body {
 	box-sizing: border-box;
 	font-family: "ClashDisplay-variable";
 	text-align: start;
+	/* overflow: hidden; */
 }
 
 * {
@@ -121,10 +122,27 @@ body {
 
 .Define {
 	background-color: var(--blasphemous-black);
-	position: relative;
+	/* position: relative; */
 	width: 100vw;
+	height: 100vh;
 	margin: 0;
 	padding: 0;
+	cursor: url("./../assets/images/CursorDefault.svg"), default;
+	overflow-y: scroll;
+}
+
+.Smaller {
+	background-color: #0075ff !important;
+}
+
+@media (hover: hover) {
+	.Define {
+		-ms-overflow-style: none; /* Internet Explorer 10+ */
+		scrollbar-width: none;
+	}
+	::-webkit-scrollbar {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -169,6 +187,7 @@ body {
 	background-size: 80%;
 	opacity: 60%;
 	mix-blend-mode: color-dodge;
+	z-index: 999;
 }
 
 .plasticTexture {
@@ -184,6 +203,7 @@ body {
 
 	background: url("./../assets/images/Plastic\ Texture.png");
 	mix-blend-mode: soft-light;
+	z-index: 999;
 	/* transform: rotate(90deg); */
 }
 
@@ -207,11 +227,11 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-	width: 30px;
+	width: 20px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+.Define::-webkit-scrollbar-track {
 	background-color: var(--proud-pink);
 }
 

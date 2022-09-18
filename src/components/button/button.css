@@ -22,6 +22,9 @@
 	column-gap: 10px;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
+
+	cursor: url("./../../assets/images/CursorPointingHand.svg"), pointer;
 
 	-webkit-tap-highlight-color: transparent;
 }
@@ -83,6 +86,11 @@
 .defineButtonPrimary:active {
 	box-shadow: 0px 2px var(--proud-pink);
 	transform: translateY(3px);
+	transition-duration: 700ms;
+}
+
+.hUIButton:hover > .icon {
+	transform: rotate(-30deg);
 	transition-duration: 700ms;
 }
 

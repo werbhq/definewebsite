@@ -12,7 +12,32 @@
 	flex-shrink: 1;
 	width: 100%;
 	max-width: 70%;
+	isolation: isolate;
+	z-index: 2;
+
 	/* max-width: 100%; */
+}
+
+.headerBackground {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	/* background: rgb(37, 38, 44);
+	background: linear-gradient(
+		0deg,
+		rgba(37, 38, 44, 0) 0%,
+		rgba(37, 38, 44, 0.8886905103838411) 61%
+	);
+	mix-blend-mode: difference; */
+}
+
+.navbarList li:hover {
+	color: var(--youthful-yellow);
+	cursor: url("./../assets/images/CursorPointingHand.svg"), pointer;
 }
 
 .hamburger {
@@ -26,16 +51,19 @@
 .hashLogoDesktop {
 	/* padding: 30px; */
 	max-height: 100px;
+	z-index: 2;
 }
 
 .hashLogoMobile {
 	max-height: 100px;
 	display: none;
+	z-index: 2;
 }
 
 .defineLogoContainer {
 	/* padding: 30px; */
 	max-height: 90px;
+	z-index: 2;
 }
 
 .header {
@@ -44,9 +72,10 @@
 	flex-direction: row;
 	align-items: center;
 	box-sizing: border-box;
-	padding: 70px 100px;
+	padding: 50px 100px;
 	font-size: 20px;
 	width: 100vw;
+	z-index: 997;
 
 	justify-content: space-between;
 
@@ -56,43 +85,51 @@
 @media screen and (max-width: 768px) {
 	.hashLogoDesktop {
 		display: none;
+		z-index: 2;
 	}
 
 	.hashLogoMobile {
 		display: block;
+		z-index: 2;
 	}
 
 	.hamburger {
 		display: block;
+		z-index: 2;
 	}
 
 	.navbarList {
 		display: none;
+		z-index: 2;
 	}
 
 	.header {
-		padding: 70px 50px;
+		padding: 50px 50px;
 	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1020px) {
 	.hashLogoDesktop {
 		display: block;
+		z-index: 2;
 	}
 
 	.hashLogoMobile {
 		display: none;
+		z-index: 2;
 	}
 
 	.hamburger {
 		display: block;
+		z-index: 2;
 	}
 
 	.navbarList {
 		display: none;
+		z-index: 2;
 	}
 
 	.header {
-		padding: 70px 100px;
+		padding: 50px 100px;
 	}
 }
