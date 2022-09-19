@@ -16,7 +16,7 @@ body {
 
 :root {
 	--youthful-yellow: #ecf016;
-	--whitty-white: #ffffff;
+	--witty-white: #ffffff;
 	--proud-pink: #fb2a9b;
 	--brilliant-blue: #0075ff;
 	--blasphemous-black: #25262c;
@@ -122,7 +122,6 @@ body {
 }
 
 .Define {
-	background-color: var(--blasphemous-black);
 	position: relative;
 	width: 100vw;
 	height: 100vh;
@@ -130,6 +129,18 @@ body {
 	padding: 0;
 	cursor: url("./../assets/images/CursorDefault.svg"), default;
 	overflow-y: scroll;
+}
+
+.blackBG {
+	background-color: var(--blasphemous-black);
+}
+
+.pinkBG {
+	background-color: var(--proud-pink);
+}
+
+.yellowBG {
+	background-color: var(--youthful-yellow);
 }
 
 @media screen and (max-width: 768px) {

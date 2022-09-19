@@ -4,21 +4,31 @@ import DefineHero from "./hero/definehero.js";
 import DefineAbout from "./about/about";
 import DefineTheme from "./theme/theme.js";
 import Navbar from "./../components/navbar/navbar.js";
+import React, { useState, createContext } from "react";
+
+const BackgroundContext = createContext();
+const NavbarContext = createContext();
 
 function Define() {
+	const [background, setBackground] = useState("blackBG");
+	const [active, setActive] = useState(false);
 	return (
-		<div className="Define">
-			<Header></Header>
-			{/* <Navbar></Navbar> */}
-			<div className="plasticTexture"></div>
-			{/* <div className="glitchTexture"></div> */}
-			<div className="plainNoise"></div>
-			<DefineHero></DefineHero>
-			<DefineAbout></DefineAbout>
-			<DefineTheme></DefineTheme>
-			{/* <HUIButton text="Coming Soon" icon="go"></HUIButton> */}
-		</div>
+		<NavbarContext.Provider value={{ active, setActive }}>
+			<BackgroundContext.Provider value={setBackground}>
+				<div className={"Define " + background}>
+					<Header></Header>
+					<Navbar></Navbar>
+					<div className="plasticTexture"></div>
+					{/* <div className="glitchTexture"></div> */}
+					<div className="plainNoise"></div>
+					<DefineHero></DefineHero>
+					<DefineAbout></DefineAbout>
+					<DefineTheme></DefineTheme>
+					{/* <HUIButton text="Coming Soon" icon="go"></HUIButton> */}
+				</div>
+			</BackgroundContext.Provider>
+		</NavbarContext.Provider>
 	);
 }
 
-export default Define;
+export { Define, BackgroundContext, NavbarContext };

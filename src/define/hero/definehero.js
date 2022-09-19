@@ -1,8 +1,11 @@
 import HUIButton from "../../components/button/button";
 import "./../hero/definehero.css";
 import LightBulbImage from "./../../assets/images/defineLightBulbVideo.gif";
+import { BackgroundContext } from "../define";
+import { useContext } from "react";
 
 function DefineHero() {
+	const setBackground = useContext(BackgroundContext);
 	return (
 		<div className="hero">
 			<div className="heroSectionA">

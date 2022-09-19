@@ -1,5 +1,5 @@
 import "./App.css";
-import Define from "./define/define";
+import { Define } from "./define/define";
 
 function App() {
 	return (

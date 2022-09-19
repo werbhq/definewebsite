@@ -2,13 +2,15 @@
 	/* background-color: aquamarine; */
 	/* margin: 0px 100px; */
 	padding: 100px 100px;
-	color: var(--whitty-white);
+	color: var(--witty-white);
 	min-height: 75vh;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	row-gap: 20px;
 	background-color: var(--proud-pink);
+	/* background-color: var(--blasphemous-black); */
+
 	/* justify-content: space-between; */
 }
 
