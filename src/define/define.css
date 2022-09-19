@@ -133,14 +133,21 @@ body {
 
 .blackBG {
 	background-color: var(--blasphemous-black);
+	transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .pinkBG {
 	background-color: var(--proud-pink);
+	transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .yellowBG {
 	background-color: var(--youthful-yellow);
+}
+
+.whiteBG {
+	background-color: var(--witty-white);
+	transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 @media screen and (max-width: 768px) {

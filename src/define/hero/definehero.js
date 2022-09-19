@@ -2,12 +2,23 @@ import HUIButton from "../../components/button/button";
 import "./../hero/definehero.css";
 import LightBulbImage from "./../../assets/images/defineLightBulbVideo.gif";
 import { BackgroundContext } from "../define";
-import { useContext } from "react";
+import { useContext, useRef } from "react";
+import { useInView } from "react-intersection-observer";
 
 function DefineHero() {
-	const setBackground = useContext(BackgroundContext);
+	const { ref, inView, entry } = useInView({
+		/* Optional options */
+		threshold: 0.35,
+	});
+
+	const { background, setBackground } = useContext(BackgroundContext);
+
+	if (inView) {
+		setBackground("blackBG");
+	}
+
 	return (
-		<div className="hero">
+		<div className="hero" ref={ref}>
 			<div className="heroSectionA">
 				<h6 className="titlesponsor">Title Sponsor Name</h6>
 				<h1 className="heroheader">define.</h1>

@@ -14,7 +14,7 @@ function Define() {
 	const [active, setActive] = useState(false);
 	return (
 		<NavbarContext.Provider value={{ active, setActive }}>
-			<BackgroundContext.Provider value={setBackground}>
+			<BackgroundContext.Provider value={{ background, setBackground }}>
 				<div className={"Define " + background}>
 					<Header></Header>
 					<Navbar></Navbar>

@@ -1,10 +1,23 @@
 import HUIButton from "../../components/button/button";
 import "./../theme/theme.css";
 import AboutGlobe from "./../../assets/images/DefineGlobe.png";
+import { BackgroundContext } from "../define";
+import { useContext, useRef } from "react";
+import { useInView } from "react-intersection-observer";
 
 function DefineTheme() {
+	const { ref, inView, entry } = useInView({
+		/* Optional options */
+		threshold: 0.5,
+	});
+
+	const { background, setBackground } = useContext(BackgroundContext);
+
+	if (inView) {
+		setBackground("whiteBG");
+	}
 	return (
-		<div className="defineTheme">
+		<div className="defineTheme" ref={ref}>
 			<div className="heroSectionA">
 				<h2 className="mainheading">diving into</h2>
 				<h2 className="heroheader">

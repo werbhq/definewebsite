@@ -1,21 +1,24 @@
 import HUIButton from "../../components/button/button";
 import "./../about/about.css";
 import AboutTree from "./../../assets/images/about_pic.png";
-import { useState, createContext, useContext, useRef } from "react";
+import React, { useState, createContext, useContext, useRef } from "react";
 import { BackgroundContext } from "../define";
 import useIntersection from "../../components/intersection/useIntersection.js";
+import { useInView } from "react-intersection-observer";
 
 function DefineAbout() {
-	const setBackground = useContext(BackgroundContext);
-	// const ref = useRef();
-	// // const inViewport = useIntersection(ref, "0px"); // Trigger as soon as the element becomes visible
-	// const inViewport = useIntersection(ref, "0px"); // Trigger if 200px is visible from the element
+	const { ref, inView, entry } = useInView({
+		/* Optional options */
+		threshold: 0.35,
+	});
 
-	// if (inViewport) {
-	// 	console.log("hey");
-	// }
+	const { background, setBackground } = useContext(BackgroundContext);
+
+	if (inView) {
+		setBackground("pinkBG");
+	}
 	return (
-		<div className="defineAbout">
+		<div className="defineAbout" ref={ref}>
 			<div className="heroSectionA">
 				<h2 className="mainheading">let's define</h2>
 				<h2 className="heroheader">
