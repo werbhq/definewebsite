@@ -9,7 +9,7 @@ import { useInView } from "react-intersection-observer";
 function DefineAbout() {
 	const { ref, inView, entry } = useInView({
 		/* Optional options */
-		threshold: 0.35,
+		threshold: 0.6,
 	});
 
 	const { background, setBackground } = useContext(BackgroundContext);
