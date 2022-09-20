@@ -13,7 +13,7 @@
 	z-index: 997;
 	background-color: var(--blasphemous-black);
 	box-shadow: -10px 0px var(--proud-pink), -20px 0px 60px rgba(0, 0, 0, 0.144);
-	transition: all 1800ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: all 0.4s ease cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .closed {
