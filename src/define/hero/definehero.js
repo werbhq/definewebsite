@@ -2,7 +2,7 @@ import HUIButton from "../../components/button/button";
 import "./../hero/definehero.css";
 import LightBulbImage from "./../../assets/images/defineLightBulbVideo.gif";
 import { BackgroundContext } from "../define";
-import { useContext, useRef } from "react";
+import { useContext, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
 function DefineHero() {
@@ -12,6 +12,7 @@ function DefineHero() {
 	});
 
 	const { background, setBackground } = useContext(BackgroundContext);
+	const [shrink, setShrink] = useState(false);
 
 	if (inView) {
 		setBackground("blackBG");
@@ -20,7 +21,7 @@ function DefineHero() {
 	return (
 		<div className="hero" ref={ref}>
 			<div className="heroSectionA">
-				<h6 className="titlesponsor">Title Sponsor Name</h6>
+				{/* <h6 className="titlesponsor">Title Sponsor Name</h6> */}
 				<h1 className="heroheader">define.</h1>
 				<h3 className="tagline">
 					<span>build for the</span>

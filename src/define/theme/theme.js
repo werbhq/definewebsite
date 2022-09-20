@@ -2,7 +2,7 @@ import HUIButton from "../../components/button/button";
 import "./../theme/theme.css";
 import AboutGlobe from "./../../assets/images/DefineGlobe.png";
 import { BackgroundContext } from "../define";
-import { useContext, useRef } from "react";
+import { useContext, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
 function DefineTheme() {
@@ -15,6 +15,7 @@ function DefineTheme() {
 
 	if (inView) {
 		setBackground("whiteBG");
+	} else {
 	}
 	return (
 		<div className="defineTheme" ref={ref}>
