@@ -3,6 +3,7 @@ import "./define.css";
 import DefineHero from "./hero/definehero.js";
 import DefineAbout from "./about/about";
 import DefineTheme from "./theme/theme.js";
+import DefineFooter from "./footer/defineFooter.js";
 import Navbar from "./../components/navbar/navbar.js";
 import React, { useState, createContext } from "react";
 import DefineSponsors from "./sponsors/sponsors.js";
@@ -26,6 +27,7 @@ function Define() {
 					<DefineAbout></DefineAbout>
 					<DefineTheme></DefineTheme>
 					<DefineSponsors></DefineSponsors>
+					<DefineFooter></DefineFooter>
 					{/* <HUIButton text="Coming Soon" icon="go"></HUIButton> */}
 				</div>
 			</BackgroundContext.Provider>

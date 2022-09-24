@@ -35,14 +35,21 @@
 	margin: 5px 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 425px) {
 	.defineTheme {
 		/* background-color: aqua; */
-		padding: 100px 25px;
+		padding: 50px 50px;
 		flex-direction: column;
 	}
 
 	.buttonContainer {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.defineTheme {
+		padding: 50px 25px;
 		flex-direction: column;
 	}
 }

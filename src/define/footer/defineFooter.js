@@ -1,12 +1,7 @@
-import "./defineFooter";
+import "./defineFooter.css";
 
 function DefineFooter() {
-	return (
-		<div className="DefineFooter">
-			<div className="plasticTexture"></div>
-			<div className="plainNoise"></div>
-		</div>
-	);
+	return <div className="defineFooter"></div>;
 }
 
 export default DefineFooter;

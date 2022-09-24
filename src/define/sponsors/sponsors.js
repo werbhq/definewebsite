@@ -25,14 +25,12 @@ function DefineSponsors() {
 
 	return (
 		<div className="defineSponsors" ref={ref}>
-			<div className="heroSectionA">
-				{/* <h6 className="titlesponsor">Title Sponsor Name</h6> */}
-				<h2 className="mainheading">meet our</h2>
-				<h2 className="heroheader">
-					<span className="brilliantBlueFG">sponsors.</span>
-				</h2>
-				<DefineSponsorsList></DefineSponsorsList>
-			</div>
+			{/* <h6 className="titlesponsor">Title Sponsor Name</h6> */}
+			<h2 className="mainheading">meet our</h2>
+			<h2 className="heroheader">
+				<span className="brilliantBlueFG">sponsors.</span>
+			</h2>
+			<DefineSponsorsList></DefineSponsorsList>
 
 			<Banner
 				open={inView}

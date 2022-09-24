@@ -19,7 +19,7 @@ function DefineHero() {
 	}
 
 	return (
-		<div className="hero" ref={ref}>
+		<div className={"hero"} ref={ref}>
 			<div className="heroSectionA">
 				{/* <h6 className="titlesponsor">Title Sponsor Name</h6> */}
 				<h1 className="heroheader">define.</h1>
