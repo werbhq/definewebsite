@@ -5,7 +5,7 @@
     /* min-height: 75vh; */
     display: flex;
     flex-direction: row;
-    padding-top: 120px;
+    padding-top: 130px;
     align-items: center;
     row-gap: 20px;
     /* background-color: var(--blasphemous-black); */
@@ -22,8 +22,7 @@
 .heroSectionB {
     display: block;
     width: 75%;
-    transform: translate(50px);
-
+    transform: translateY(-40px);
     /* background-color: aquamarine; */
 }
 
@@ -56,10 +55,11 @@
     column-gap: 10px;
 }
 
-@media screen and (min-width: 425px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .hero {
         /* background-color: aqua; */
         padding: 100px 50px;
+        margin-top: 20vh;
         flex-direction: column;
     }
 

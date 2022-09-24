@@ -29,7 +29,6 @@ function DefineHero() {
                         <br /> real world.
                     </span>
                 </h3>
-
                 <br />
                 <div className="buttonContainer">
                     <HUIButton
