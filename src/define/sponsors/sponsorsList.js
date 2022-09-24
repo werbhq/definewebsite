@@ -4,10 +4,10 @@ import SponsorItem from './sponsorItem';
 var data = [
     { imageKey: 'Wolfram', imagePath: 'Wolfram.svg', URL: 'https://www.wolfram.com/', type: 'gold' },
     { imageKey: 'GitHub', imagePath: 'GitHub.svg', URL: 'https://www.github.com', type: 'gold' },
+    { imageKey: 'Echo3D', imagePath: 'echo3D.png', URL: 'https://www.echo3d.co/', type: 'gold' },
+    { imageKey: 'Voiceflow', imagePath: 'voiceflow.png', URL: 'https://www.voiceflow.com/', type: 'gold' },
+    { imageKey: 'FossUnited', imagePath: 'FOSSUnited.svg', URL: 'https://fossunited.org', type: 'silver' },
     { imageKey: 'ICFoss', URL: 'https://www.wolfram.com/', type: 'silver' },
-    { imageKey: 'Echo3D', imagePath: 'echo3D.png', URL: 'https://www.wolfram.com/', type: 'gold' },
-    { imageKey: 'Voiceflow', imagePath: 'voiceflow.png', URL: 'https://www.wolfram.com/', type: 'gold' },
-    { imageKey: 'FossUnited', imagePath: 'FOSSUnited.svg', URL: 'https://www.wolfram.com/', type: 'silver' },
     { imageKey: 'Testmail', URL: 'https://www.wolfram.com/', type: 'silver' },
     {
         imageKey: 'InterviewCake',
