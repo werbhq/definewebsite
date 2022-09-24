@@ -47,6 +47,7 @@ function DefineSponsors() {
 							type="primary"
 							variant="2"
 							color="var(--witty-white)"
+							link="https://www.google.com"
 						></HUIButton>
 					</div>
 				}
