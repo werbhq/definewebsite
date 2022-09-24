@@ -1,18 +1,16 @@
-import HUIButton from '../../components/button/button';
 import './../about/about.css';
 import AboutTree from './../../assets/images/about_pic.png';
-import React, { useState, createContext, useContext, useRef } from 'react';
+import React, { useContext } from 'react';
 import { BackgroundContext } from '../define';
-import useIntersection from '../../components/intersection/useIntersection.js';
 import { useInView } from 'react-intersection-observer';
 
 function DefineAbout() {
-    const { ref, inView, entry } = useInView({
+    const { ref, inView } = useInView({
         /* Optional options */
         threshold: 0.6,
     });
 
-    const { background, setBackground } = useContext(BackgroundContext);
+    const { setBackground } = useContext(BackgroundContext);
 
     if (inView) {
         setBackground('pinkBG');

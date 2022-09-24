@@ -1,65 +1,63 @@
-import DefineSeperator from "../../components/seperator/seperator";
-import SponsorItem from "./sponsorItem";
+import DefineSeperator from '../../components/seperator/seperator';
+import SponsorItem from './sponsorItem';
 
 var data = [
-	{ imageKey: "Wolfram", URL: "https://www.wolfram.com/", type: "gold" },
-	{ imageKey: "GitHub", URL: "https://www.github.com", type: "gold" },
-	{ imageKey: "ICFoss", URL: "https://www.wolfram.com/", type: "silver" },
-	{ imageKey: "Echo3D", URL: "https://www.wolfram.com/", type: "gold" },
-	{ imageKey: "Voiceflow", URL: "https://www.wolfram.com/", type: "gold" },
-	{ imageKey: "FossUnited", URL: "https://www.wolfram.com/", type: "silver" },
-	{ imageKey: "Testmail", URL: "https://www.wolfram.com/", type: "silver" },
-	{
-		imageKey: "GitHubStudentDev",
-		URL: "https://www.wolfram.com/",
-		type: "educational",
-	},
-	{
-		imageKey: "InterviewCake",
-		URL: "https://www.wolfram.com/",
-		type: "educational",
-	},
-	{
-		imageKey: "Hoverrobotics",
-		URL: "https://www.wolfram.com/",
-		type: "platinum",
-	},
-	{
-		imageKey: "Werb",
-		URL: "https://attendoindia.netlify.app/",
-		type: "technical",
-	},
+    { imageKey: 'Wolfram', imagePath: 'Wolfram.svg', URL: 'https://www.wolfram.com/', type: 'gold' },
+    { imageKey: 'GitHub', imagePath: 'GitHub.svg', URL: 'https://www.github.com', type: 'gold' },
+    { imageKey: 'ICFoss', URL: 'https://www.wolfram.com/', type: 'silver' },
+    { imageKey: 'Echo3D', imagePath: 'echo3D.png', URL: 'https://www.wolfram.com/', type: 'gold' },
+    { imageKey: 'Voiceflow', imagePath: 'voiceflow.png', URL: 'https://www.wolfram.com/', type: 'gold' },
+    { imageKey: 'FossUnited', imagePath: 'echo3D.png', URL: 'https://www.wolfram.com/', type: 'silver' },
+    { imageKey: 'Testmail', imagePath: 'echo3D.png', URL: 'https://www.wolfram.com/', type: 'silver' },
+    {
+        imageKey: 'GitHubStudentDev',
+        URL: 'https://www.wolfram.com/',
+        type: 'educational',
+        imagePath: 'echo3D.png',
+    },
+    {
+        imageKey: 'InterviewCake',
+        URL: 'https://www.wolfram.com/',
+        type: 'educational',
+        imagePath: 'echo3D.png',
+    },
+    {
+        imageKey: 'Hoverrobotics',
+        URL: 'https://www.wolfram.com/',
+        type: 'platinum',
+        imagePath: 'echo3D.png',
+    },
+    {
+        imageKey: 'Werb',
+        URL: 'https://attendoindia.netlify.app/',
+        type: 'technical',
+        imagePath: 'echo3D.png',
+    },
 ];
 
-var precedence = ["platinum", "gold", "silver", "educational", "technical"];
+var precedenceOrder = ['platinum', 'gold', 'silver', 'educational', 'technical'];
 
 function DefineSponsorsList() {
-	var listFull = [],
-		tempList = [],
-		count = 0,
-		flag = false;
-	for (var i in precedence) {
-		flag = false;
-		for (var j in data) {
-			if (data[j].type == precedence[i]) {
-				flag = true;
-				tempList.push(
-					<SponsorItem
-						imageKey={data[j].imageKey}
-						URL={data[j].URL}
-						type={data[j].type}
-					></SponsorItem>
-				);
-			}
-		}
-		if (flag) ++count;
-		listFull.push(<div className="sponsorTier">{tempList}</div>);
-		if (flag && i != precedence.length - 1)
-			listFull.push(<DefineSeperator></DefineSeperator>);
-		tempList = [];
-	}
+    const listFull = [];
+    var tempList = [],
+        count = 0,
+        flag = false;
 
-	return <div className="sponsorList">{listFull}</div>;
+    for (const i in precedenceOrder) {
+        flag = false;
+        for (var j in data) {
+            if (data[j].type === precedenceOrder[i]) {
+                flag = true;
+                tempList.push(<SponsorItem {...data[j]}></SponsorItem>);
+            }
+        }
+        if (flag) ++count;
+        listFull.push(<div className="sponsorTier">{tempList}</div>);
+        if (flag && count !== precedenceOrder.length - 1) listFull.push(<DefineSeperator></DefineSeperator>);
+        tempList = [];
+    }
+
+    return <div className="sponsorList">{listFull}</div>;
 }
 
 export default DefineSponsorsList;

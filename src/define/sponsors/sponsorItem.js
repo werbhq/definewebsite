@@ -1,18 +1,10 @@
-import getImageByKey from "./sponsorImages";
-
-function SponsorItem(props) {
-	return (
-		<a href={props.URL} target="blank" className="sponsorItemLink">
-			<img
-				className={
-					"sponsorItem sponsorItem" +
-					props.type[0].toUpperCase() +
-					props.type.slice(1, props.type.length)
-				}
-				src={getImageByKey(props.imageKey)}
-			/>
-		</a>
-	);
+function SponsorItem({ imagePath, URL, type }) {
+    const image = require(`./../../assets/images/sponsors/${imagePath}`);
+    return (
+        <a href={URL} target="blank" className="sponsorItemLink">
+            <img className={'sponsorItem sponsorItem' + type[0].toUpperCase() + type.slice(1, type.length)} src={image} alt="sponser-img" />
+        </a>
+    );
 }
 
 export default SponsorItem;
