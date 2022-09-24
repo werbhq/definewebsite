@@ -1,48 +1,48 @@
 .defineTheme {
-	/* background-color: aquamarine; */
-	/* margin: 0px 100px; */
-	padding: 50px 100px;
-	color: var(--witty-white);
-	min-height: 75vh;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	row-gap: 20px;
-	/* background-color: var(--witty-white); */
-	/* justify-content: space-between; */
+    /* background-color: aquamarine; */
+    /* margin: 0px 100px; */
+    padding: 50px 100px;
+    color: var(--witty-white);
+    min-height: 75vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    row-gap: 20px;
+    /* background-color: var(--witty-white); */
+    /* justify-content: space-between; */
 }
 
 .defineTheme .description {
-	font-family: "coolvetica-rg";
-	font-weight: 100;
-	letter-spacing: 0px;
-	text-align: left;
+    font-family: 'coolvetica-rg';
+    font-weight: 100;
+    letter-spacing: 0px;
+    text-align: left;
 }
 
 .defineTheme .benefits {
-	font-family: "coolvetica-rg";
-	font-weight: 100;
-	text-align: left;
+    font-family: 'coolvetica-rg';
+    font-weight: 100;
+    text-align: left;
 }
 
 .defineTheme ul {
-	list-style: none;
+    list-style: none;
 }
 
 .defineTheme li {
-	background: url("./../../assets/images/Bullet.svg") no-repeat left center;
-	padding-left: 24px; /* the width of your image + some space */
-	margin: 5px 0;
+    background: url('./../../assets/images/Bullet.svg') no-repeat left center;
+    padding-left: 24px; /* the width of your image + some space */
+    margin: 5px 0;
 }
 
 @media screen and (max-width: 768px) {
-	.defineTheme {
-		/* background-color: aqua; */
-		padding: 100px 25px;
-		flex-direction: column;
-	}
+    .defineTheme {
+        /* background-color: aqua; */
+        padding: 100px 25px;
+        flex-direction: column;
+    }
 
-	.buttonContainer {
-		flex-direction: column;
-	}
+    .buttonContainer {
+        flex-direction: column;
+    }
 }
