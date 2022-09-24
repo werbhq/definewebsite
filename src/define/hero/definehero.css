@@ -5,6 +5,7 @@
     /* min-height: 75vh; */
     display: flex;
     flex-direction: row;
+    padding-top: 120px;
     align-items: center;
     row-gap: 20px;
     /* background-color: var(--blasphemous-black); */

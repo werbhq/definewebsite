@@ -2,7 +2,7 @@ import HUIButton from '../../components/button/button';
 import './../hero/definehero.css';
 import LightBulbImage from './../../assets/images/defineLightBulbVideo.gif';
 import { BackgroundContext } from '../define';
-import { useContext, useRef, useState } from 'react';
+import { useContext, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 function DefineHero() {
