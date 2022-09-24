@@ -10,12 +10,12 @@ var data = [
 	{ imageKey: "FossUnited", URL: "https://www.wolfram.com/", type: "silver" },
 	{ imageKey: "Testmail", URL: "https://www.wolfram.com/", type: "silver" },
 	{
-		imageKey: "InterviewCake",
+		imageKey: "GitHubStudentDev",
 		URL: "https://www.wolfram.com/",
 		type: "educational",
 	},
 	{
-		imageKey: "GitHubStudentDev",
+		imageKey: "InterviewCake",
 		URL: "https://www.wolfram.com/",
 		type: "educational",
 	},
