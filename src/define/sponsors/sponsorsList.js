@@ -3,13 +3,35 @@ import SponsorItem from "./sponsorItem";
 
 var data = [
 	{ imageKey: "Wolfram", URL: "https://www.wolfram.com/", type: "gold" },
-	{ imageKey: "GitHub", URL: "https://www.github.xom", type: "silver" },
-	{ imageKey: "FOSS", URL: "https://www.wolfram.com/", type: "silver" },
+	{ imageKey: "GitHub", URL: "https://www.github.com", type: "gold" },
+	{ imageKey: "ICFoss", URL: "https://www.wolfram.com/", type: "silver" },
 	{ imageKey: "Echo3D", URL: "https://www.wolfram.com/", type: "gold" },
 	{ imageKey: "Voiceflow", URL: "https://www.wolfram.com/", type: "gold" },
+	{ imageKey: "FossUnited", URL: "https://www.wolfram.com/", type: "silver" },
+	{ imageKey: "Testmail", URL: "https://www.wolfram.com/", type: "silver" },
+	{
+		imageKey: "InterviewCake",
+		URL: "https://www.wolfram.com/",
+		type: "educational",
+	},
+	{
+		imageKey: "GitHubStudentDev",
+		URL: "https://www.wolfram.com/",
+		type: "educational",
+	},
+	{
+		imageKey: "Hoverrobotics",
+		URL: "https://www.wolfram.com/",
+		type: "platinum",
+	},
+	{
+		imageKey: "Werb",
+		URL: "https://attendoindia.netlify.app/",
+		type: "technical",
+	},
 ];
 
-var precedence = ["platinum", "gold", "silver"];
+var precedence = ["platinum", "gold", "silver", "educational", "technical"];
 
 function DefineSponsorsList() {
 	var listFull = [],
