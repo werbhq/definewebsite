@@ -28,7 +28,7 @@ function Navbar(props) {
                         type="primary"
                         variant="1"
                         color="var(--blasphemous-black)"
-                    ></HUIButton>
+                    />
                 </ul>
             </div>
             <div

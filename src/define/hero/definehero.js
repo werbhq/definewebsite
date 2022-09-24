@@ -2,17 +2,16 @@ import HUIButton from '../../components/button/button';
 import './../hero/definehero.css';
 import LightBulbImage from './../../assets/images/defineLightBulbVideo.gif';
 import { BackgroundContext } from '../define';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 function DefineHero() {
-    const { ref, inView, entry } = useInView({
+    const { ref, inView } = useInView({
         /* Optional options */
         threshold: 0.6,
     });
 
     const { setBackground } = useContext(BackgroundContext);
-    const [shrink, setShrink] = useState(false);
 
     if (inView) {
         setBackground('blackBG');
