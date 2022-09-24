@@ -1,232 +1,141 @@
-html,
-body {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "ClashDisplay-variable";
-	text-align: start;
-	overflow: hidden;
-}
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 :root {
-	--youthful-yellow: #ecf016;
-	--witty-white: #ffffff;
-	--proud-pink: #fb2a9b;
-	--brilliant-blue: #0075ff;
-	--blasphemous-black: #25262c;
-}
-
-@font-face {
-	font-family: "ClashDisplay-Variable";
-	src: local("ClashDisplay-Variable"),
-		url("./../assets/fonts/ClashDisplay/ClashDisplay-Variable.ttf")
-			format("truetype");
-	font-weight: 200 700;
-	font-display: swap;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "ClashDisplay-Extralight";
-	src: local("ClashDisplay-Extralight")
-		url("../assets/fonts/ClashDisplay/ClashDisplay-Extralight.otf")
-		format("opentype");
-	font-weight: 200;
-	font-display: swap;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "ClashDisplay-Light";
-	src: local("ClashDisplay-Light")
-		url("../assets/fonts/ClashDisplay/ClashDisplay-Light.otf")
-		format("opentype");
-	font-weight: 300;
-	font-display: swap;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "ClashDisplay-Regular";
-	src: local("ClashDisplay-Regular")
-		url("../assets/fonts/ClashDisplay/ClashDisplay-Regular.otf")
-		format("opentype");
-	font-weight: 400;
-	font-display: swap;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "ClashDisplay-Medium";
-	src: local("ClashDisplay-Medium")
-		url("../assets/fonts/ClashDisplay/ClashDisplay-Medium.otf")
-		format("opentype");
-	font-weight: 500;
-	font-display: swap;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "ClashDisplay-Semibold";
-	src: local("ClashDisplay-Semibold")
-		url("../assets/fonts/ClashDisplay/ClashDisplay-Semibold.otf")
-		format("opentype");
-	font-weight: 600;
-	font-display: swap;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "ClashDisplay-Bold";
-	src: local("ClashDisplay-Bold")
-		url("../assets/fonts/ClashDisplay/ClashDisplay-Bold.otf") format("opentype");
-	font-weight: 700;
-	font-display: swap;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "coolvetica-rg";
-	font-weight: 500;
-	src: url("../assets/fonts/coolvetica/coolvetica\ rg.otf");
+    --youthful-yellow: #ecf016;
+    --witty-white: #ffffff;
+    --proud-pink: #fb2a9b;
+    --brilliant-blue: #0075ff;
+    --blasphemous-black: #25262c;
 }
 
 .Define h1 {
-	font-size: 10vw;
-	font-weight: 600;
+    font-size: 10vw;
+    font-weight: 600;
 }
 
 .Define h2 {
-	font-size: 5vw;
-	font-weight: 600;
+    font-size: 5vw;
+    font-weight: 600;
 }
 
 .Define h3 {
-	font-size: 4vw;
-	line-height: 95%;
-	letter-spacing: 2px;
+    font-size: 3.5vw;
+    line-height: 95%;
+    letter-spacing: 2px;
 }
 
 .Define h6 {
-	font-size: 1.5vw;
+    font-size: 1.5vw;
 }
 
 .Define p {
-	font-size: 2vw;
+    font-size: 2vw;
 }
 
 .Define {
-	position: relative;
-	width: 100vw;
-	height: 100vh;
-	margin: 0;
-	padding: 0;
-	cursor: url("./../assets/images/CursorDefault.svg"), default;
-	overflow-y: scroll;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    cursor: url('./../assets/images/CursorDefault.svg'), default;
+    overflow-y: scroll;
 }
 
 .blackBG {
-	background-color: var(--blasphemous-black);
-	transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: var(--blasphemous-black);
+    transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .pinkBG {
-	background-color: var(--proud-pink);
-	transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: var(--proud-pink);
+    transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .yellowBG {
-	background-color: var(--youthful-yellow);
+    background-color: var(--youthful-yellow);
 }
 
 .whiteBG {
-	background-color: var(--witty-white);
-	transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: var(--witty-white);
+    transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .Define .inView {
-	height: 120vh;
+    height: 120vh;
 }
 
 .Define .offView {
-	height: 60vh;
+    height: 60vh;
 }
 
 .shrink {
-	height: fit-content;
-	min-height: 0;
+    height: fit-content;
+    min-height: 0;
 }
 
 @media screen and (max-width: 768px) {
-	.Define h1 {
-		font-size: 60px;
-	}
+    .Define h1 {
+        font-size: 60px;
+    }
 
-	.Define h2 {
-		font-size: 48px;
-	}
+    .Define h2 {
+        font-size: 48px;
+    }
 
-	.Define h3 {
-		font-size: 28px;
-	}
+    .Define h3 {
+        font-size: 28px;
+    }
 
-	.Define h6 {
-		font-size: 10px;
-	}
+    .Define h6 {
+        font-size: 10px;
+    }
 
-	.Define p {
-		font-size: 18px;
-	}
+    .Define p {
+        font-size: 18px;
+    }
 }
 
 .Define .youthfulYellowFG {
-	color: var(--youthful-yellow);
+    color: var(--youthful-yellow);
 }
 
 .Define .brilliantBlueFG {
-	color: var(--brilliant-blue);
+    color: var(--brilliant-blue);
 }
 
 .plainNoise {
-	position: fixed;
-	left: 0px;
-	right: 0px;
-	top: 0px;
-	bottom: 0px;
-	/* width: 100vw;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    /* width: 100vw;
 	height: 100vh; */
-	user-select: none;
-	pointer-events: none;
+    user-select: none;
+    pointer-events: none;
 
-	background: url("./../assets/images/Plain\ Noise.png");
-	background-repeat: repeat;
-	background-size: 80%;
-	opacity: 60%;
-	mix-blend-mode: color-dodge;
-	z-index: 999;
+    background: url('./../assets/images/Plain\ Noise.png');
+    background-repeat: repeat;
+    background-size: 80%;
+    opacity: 60%;
+    mix-blend-mode: color-dodge;
+    z-index: 999;
 }
 
 .plasticTexture {
-	position: fixed;
-	left: 0px;
-	right: 0px;
-	top: 0px;
-	bottom: 0px;
-	/* width: 100vw;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    /* width: 100vw;
 	height: 100vh; */
-	user-select: none;
-	pointer-events: none;
+    user-select: none;
+    pointer-events: none;
 
-	background: url("./../assets/images/Plastic\ Texture.png");
-	mix-blend-mode: soft-light;
-	z-index: 999;
-	/* transform: rotate(90deg); */
+    background: url('./../assets/images/Plastic\ Texture.png');
+    mix-blend-mode: soft-light;
+    z-index: 999;
+    /* transform: rotate(90deg); */
 }
 
 /* .glitchTexture {
@@ -248,51 +157,27 @@ body {
 } */
 
 .Define {
-	-ms-overflow-style: none;
-	scrollbar-width: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .Define > a,
 a:hover,
 a:focus,
 a:active {
-	text-decoration: none;
-	color: inherit;
-}
-
-::-webkit-scrollbar {
-	display: none;
-	z-index: 998;
+    text-decoration: none;
+    color: inherit;
 }
 
 .Define .mainheading {
-	font-family: "coolvetica-rg";
-	font-weight: 100;
-	line-height: 80%;
+    font-family: 'coolvetica-rg';
+    font-weight: 100;
+    line-height: 80%;
 }
 
 .Define .subheading {
-	font-family: "coolvetica-rg";
-	letter-spacing: 0;
-	font-weight: 100;
-	line-height: 80%;
-}
-
-@media (hover: hover) {
-	/* width */
-	::-webkit-scrollbar {
-		width: 20px;
-		display: block;
-		z-index: 999;
-	}
-
-	/* Track */
-	.Define::-webkit-scrollbar-track {
-		background-color: var(--proud-pink);
-	}
-
-	/* Handle */
-	::-webkit-scrollbar-thumb {
-		background: var(--youthful-yellow);
-	}
+    font-family: 'coolvetica-rg';
+    letter-spacing: 0;
+    font-weight: 100;
+    line-height: 80%;
 }
