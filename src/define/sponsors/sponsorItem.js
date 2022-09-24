@@ -1,4 +1,5 @@
 function SponsorItem({ imagePath, URL, type }) {
+    if (imagePath === undefined) imagePath = 'echo3D.png';
     const image = require(`./../../assets/images/sponsors/${imagePath}`);
     return (
         <a href={URL} target="blank" className="sponsorItemLink">

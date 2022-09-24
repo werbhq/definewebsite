@@ -4,7 +4,7 @@ import SponsorItem from './sponsorItem';
 var data = [
     { imageKey: 'Wolfram', imagePath: 'Wolfram.svg', URL: 'https://www.wolfram.com/', type: 'gold' },
     { imageKey: 'GitHub', imagePath: 'GitHub.svg', URL: 'https://www.github.com', type: 'gold' },
-    { imageKey: 'ICFoss', URL: 'https://www.wolfram.com/', type: 'silver' },
+    { imageKey: 'ICFoss', imagePath: 'echo3D.png', URL: 'https://www.wolfram.com/', type: 'silver' },
     { imageKey: 'Echo3D', imagePath: 'echo3D.png', URL: 'https://www.wolfram.com/', type: 'gold' },
     { imageKey: 'Voiceflow', imagePath: 'voiceflow.png', URL: 'https://www.wolfram.com/', type: 'gold' },
     { imageKey: 'FossUnited', imagePath: 'echo3D.png', URL: 'https://www.wolfram.com/', type: 'silver' },
