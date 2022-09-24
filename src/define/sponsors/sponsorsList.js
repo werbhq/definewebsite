@@ -4,58 +4,49 @@ import SponsorItem from './sponsorItem';
 var data = [
     { imageKey: 'Wolfram', imagePath: 'Wolfram.svg', URL: 'https://www.wolfram.com/', type: 'gold' },
     { imageKey: 'GitHub', imagePath: 'GitHub.svg', URL: 'https://www.github.com', type: 'gold' },
-    { imageKey: 'ICFoss', imagePath: 'echo3D.png', URL: 'https://www.wolfram.com/', type: 'silver' },
+    { imageKey: 'ICFoss', URL: 'https://www.wolfram.com/', type: 'silver' },
     { imageKey: 'Echo3D', imagePath: 'echo3D.png', URL: 'https://www.wolfram.com/', type: 'gold' },
     { imageKey: 'Voiceflow', imagePath: 'voiceflow.png', URL: 'https://www.wolfram.com/', type: 'gold' },
-    { imageKey: 'FossUnited', imagePath: 'echo3D.png', URL: 'https://www.wolfram.com/', type: 'silver' },
-    { imageKey: 'Testmail', imagePath: 'echo3D.png', URL: 'https://www.wolfram.com/', type: 'silver' },
-    {
-        imageKey: 'GitHubStudentDev',
-        URL: 'https://www.wolfram.com/',
-        type: 'educational',
-        imagePath: 'echo3D.png',
-    },
+    { imageKey: 'FossUnited', imagePath: 'FOSSUnited.svg', URL: 'https://www.wolfram.com/', type: 'silver' },
+    { imageKey: 'Testmail', URL: 'https://www.wolfram.com/', type: 'silver' },
     {
         imageKey: 'InterviewCake',
         URL: 'https://www.wolfram.com/',
         type: 'educational',
-        imagePath: 'echo3D.png',
     },
     {
         imageKey: 'Hoverrobotics',
         URL: 'https://www.wolfram.com/',
         type: 'platinum',
-        imagePath: 'echo3D.png',
     },
     {
         imageKey: 'Werb',
         URL: 'https://attendoindia.netlify.app/',
         type: 'technical',
-        imagePath: 'echo3D.png',
     },
 ];
 
 var precedenceOrder = ['platinum', 'gold', 'silver', 'educational', 'technical'];
 
 function DefineSponsorsList() {
-    const listFull = [];
-    var tempList = [],
-        count = 0,
-        flag = false;
+    var listFull = [];
 
     for (const i in precedenceOrder) {
-        flag = false;
-        for (var j in data) {
-            if (data[j].type === precedenceOrder[i]) {
-                flag = true;
-                tempList.push(<SponsorItem {...data[j]}></SponsorItem>);
+        const tempList = [];
+
+        for (const e of data) {
+            if (e.type === precedenceOrder[i]) {
+                if (e.imagePath !== undefined) tempList.push(<SponsorItem {...e}></SponsorItem>);
             }
         }
-        if (flag) ++count;
-        listFull.push(<div className="sponsorTier">{tempList}</div>);
-        if (flag && count !== precedenceOrder.length - 1) listFull.push(<DefineSeperator></DefineSeperator>);
-        tempList = [];
+
+        if (tempList.length !== 0) {
+            listFull.push(<div className="sponsorTier">{tempList}</div>);
+            listFull.push(<DefineSeperator></DefineSeperator>);
+        }
     }
+
+    listFull.pop();
 
     return <div className="sponsorList">{listFull}</div>;
 }
