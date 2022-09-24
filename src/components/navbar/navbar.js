@@ -25,8 +25,8 @@ function Navbar(props) {
 						text="Coming Soon!"
 						icon="hashIcon"
 						event="define"
-						type="Primary"
-						color="#25262c"
+						type="primary"
+						color="var(--blasphemous-black)"
 					></HUIButton>
 				</ul>
 			</div>

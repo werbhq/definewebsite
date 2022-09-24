@@ -1,0 +1,18 @@
+.defineSponsors {
+	/* background-color: aquamarine; */
+	padding: 50px 100px;
+	color: var(--witty-white);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: row;
+	/* align-items: center; */
+	row-gap: 20px;
+	/* background-color: var(--blasphemous-black); */
+	/* justify-content: space-between; */
+}
+
+@media screen and (max-width: 768px) {
+	.defineSponsors {
+		padding: 25px 25px;
+	}
+}

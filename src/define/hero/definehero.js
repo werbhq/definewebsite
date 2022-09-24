@@ -36,16 +36,17 @@ function DefineHero() {
 						text="Coming Soon"
 						icon="go"
 						event="define"
-						type="Primary"
-						color="#25262c"
+						type="primary"
+						variant="1"
+						color="var(--blasphemous-black)"
 					></HUIButton>
 					<br />
 					<HUIButton
 						text="Stay Tuned"
 						icon="mail"
 						event="define"
-						type="Secondary"
-						color="#ecf016"
+						type="secondary"
+						color="var(--youthful-yellow)"
 					></HUIButton>
 				</div>
 			</div>

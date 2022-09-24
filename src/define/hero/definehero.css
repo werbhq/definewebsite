@@ -1,6 +1,6 @@
 .hero {
 	/* background-color: aquamarine; */
-	padding: 150px 100px;
+	padding: 50px 100px;
 	color: var(--witty-white);
 	min-height: 75vh;
 	display: flex;
@@ -58,7 +58,7 @@
 @media screen and (max-width: 768px) {
 	.hero {
 		/* background-color: aqua; */
-		padding: 100px 0px;
+		padding: 100px 25px;
 		flex-direction: column;
 	}
 

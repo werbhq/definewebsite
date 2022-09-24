@@ -248,6 +248,19 @@ body {
 	z-index: 998;
 }
 
+.Define .mainheading {
+	font-family: "coolvetica-rg";
+	font-weight: 100;
+	line-height: 80%;
+}
+
+.Define .subheading {
+	font-family: "coolvetica-rg";
+	letter-spacing: 0;
+	font-weight: 100;
+	line-height: 80%;
+}
+
 @media (hover: hover) {
 	/* width */
 	::-webkit-scrollbar {

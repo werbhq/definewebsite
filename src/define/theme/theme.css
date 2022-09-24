@@ -1,8 +1,8 @@
 .defineTheme {
 	/* background-color: aquamarine; */
 	/* margin: 0px 100px; */
-	padding: 100px 100px;
-	color: var(--blasphemous-black);
+	padding: 50px 100px;
+	color: var(--witty-white);
 	min-height: 75vh;
 	display: flex;
 	flex-direction: row;
@@ -10,19 +10,6 @@
 	row-gap: 20px;
 	/* background-color: var(--witty-white); */
 	/* justify-content: space-between; */
-}
-
-.defineTheme .mainheading {
-	font-family: "coolvetica-rg";
-	font-weight: 100;
-	line-height: 80%;
-}
-
-.defineTheme .subheading {
-	font-family: "coolvetica-rg";
-	letter-spacing: 0;
-	font-weight: 100;
-	line-height: 80%;
 }
 
 .defineTheme .description {

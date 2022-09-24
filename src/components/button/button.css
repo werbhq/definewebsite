@@ -34,28 +34,38 @@
 	border: 2px solid var(--youthful-yellow);
 }
 
-.defineButtonPrimary {
-	background-color: var(--youthful-yellow);
-	color: var(--blasphemous-black);
+.defineButton {
 	/* border: 2px solid var(--youthful-yellow); */
 
 	font-family: "coolvetica-rg", sans-serif;
 	line-height: 110%;
 	transition: all 900ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.Define .primaryVar1 {
+	background-color: var(--youthful-yellow);
+	color: var(--blasphemous-black);
 
 	border: none;
 	border-bottom: 2px solid var(--proud-pink);
 	box-shadow: 0px 5px var(--proud-pink);
 }
 
-.defineButtonSecondary {
+.Define .primaryVar2 {
+	background-color: var(--blasphemous-black);
+	color: var(--youthful-yellow);
+
+	border: none;
+	border-bottom: 2px solid var(--youthful-yellow);
+	box-shadow: 0px 5px var(--youthful-yellow);
+}
+
+.Define .secondary {
 	background-color: transparent;
 	color: var(--youthful-yellow);
-	border: 2px solid var(--youthful-yellow);
-	font-family: "coolvetica-rg", sans-serif;
-	line-height: 110%;
-	transition: all 900ms cubic-bezier(0.075, 0.82, 0.165, 1);
 
+	border: 2px solid var(--youthful-yellow);
+	border-bottom: 2px solid var(--youthful-yellow);
 	box-shadow: 0px 5px var(--youthful-yellow);
 }
 
@@ -71,21 +81,33 @@
 		transform: translateY(-2px);
 	}
 
-	.defineButtonPrimary:hover {
-		box-shadow: 0px 8px var(--proud-pink);
+	.Define .defineButton:hover {
 		transform: translateY(-3px);
 	}
 
-	.defineButtonSecondary:hover {
+	.Define .primaryVar1:hover {
+		box-shadow: 0px 8px var(--proud-pink);
+	}
+	.Define .primaryVar2:hover {
 		box-shadow: 0px 8px var(--youthful-yellow);
-		transform: translateY(-3px);
+	}
+
+	.Define .secondary:hover {
+		box-shadow: 0px 8px var(--youthful-yellow);
 	}
 }
 
-.defineButtonPrimary:active {
-	box-shadow: 0px 2px var(--proud-pink);
+.Define .defineButton:active {
 	transform: translateY(3px);
 	transition-duration: 700ms;
+}
+
+.Define .primaryVar1:active {
+	box-shadow: 0px 2px var(--proud-pink);
+}
+
+.Define .primaryVar2:active {
+	box-shadow: 0px 2px var(--youthful-yellow);
 }
 
 .hUIButton:hover > .icon {
@@ -93,10 +115,8 @@
 	transition-duration: 700ms;
 }
 
-.defineButtonSecondary:active {
+.Define .secondary:active {
 	box-shadow: 0px 2px var(--youthful-yellow);
-	transform: translateY(3px);
-	transition-duration: 700ms;
 }
 
 .hUIButton .icon {

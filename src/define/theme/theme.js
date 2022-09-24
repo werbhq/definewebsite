@@ -1,4 +1,3 @@
-import HUIButton from "../../components/button/button";
 import "./../theme/theme.css";
 import AboutGlobe from "./../../assets/images/DefineGlobe.png";
 import { BackgroundContext } from "../define";
@@ -14,7 +13,7 @@ function DefineTheme() {
 	const { background, setBackground } = useContext(BackgroundContext);
 
 	if (inView) {
-		setBackground("whiteBG");
+		setBackground("blackBG");
 	} else {
 	}
 	return (

@@ -37,8 +37,9 @@ function Header() {
 						text="Coming Soon!"
 						icon="hashIcon"
 						event="define"
-						type="Primary"
-						color="#25262c"
+						type="primary"
+						variant="1"
+						color="var(--blasphemous-black)"
 					></HUIButton>
 				</ul>
 				<div className="headerBackground"></div>
