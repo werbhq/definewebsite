@@ -9,6 +9,7 @@ var data = [
     { imageKey: 'FossUnited', imagePath: 'FOSSUnited.svg', URL: 'https://fossunited.org', type: 'silver' },
     { imageKey: 'ICFoss', URL: 'https://www.wolfram.com/', type: 'silver' },
     { imageKey: 'Testmail', URL: 'https://www.wolfram.com/', type: 'silver' },
+    { imageKey: 'Taskade', imagePath: 'taskade.svg', URL: 'https://www.taskade.com/', type: 'silver' },
     {
         imageKey: 'InterviewCake',
         URL: 'https://www.wolfram.com/',
@@ -21,6 +22,7 @@ var data = [
     },
     {
         imageKey: 'Werb',
+        imagePath: 'werb.svg',
         URL: 'https://attendoindia.netlify.app/',
         type: 'technical',
     },

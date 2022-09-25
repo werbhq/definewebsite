@@ -42,7 +42,7 @@ function DefineSponsors() {
                             type="primary"
                             variant="2"
                             color="var(--witty-white)"
-                            link="https://www.google.com"
+                            link="https://www.rebrand.ly/define_sponsorguide"
                         ></HUIButton>
                     </div>
                 }
