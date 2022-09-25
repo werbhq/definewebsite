@@ -28,7 +28,9 @@ function Header() {
                 ></img>
                 <ul className="navbarList">
                     <li>
-                        <DefineLogo></DefineLogo>
+                        <a href="https://define.hashmbcet.tech/" target={'_blank'} rel="noreferrer">
+                            <DefineLogo />
+                        </a>
                     </li>
                     <li>Schedule</li>
                     <li>FAQs</li>
