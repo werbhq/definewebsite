@@ -2,19 +2,20 @@ import './button.css';
 import Icon from './../icon/icon';
 
 function HUIButton(props) {
+    const color = props.color == undefined ? 'var(--blasphemous-black)' : props.color;
     return props.link === undefined ? (
         <button
             className={'hUIButton ' + props.event + 'Button ' + props.type + (props.variant !== undefined ? 'Var' + props.variant : '')}
-            style={{ color: props.color, background: props.bgcolor }}
+            style={{ color: color, background: props.bgcolor }}
         >
             {props.text}
-            <Icon icon={props.icon} color={props.color} className="icon"></Icon>
+            <Icon icon={props.icon} color={color} className="icon"></Icon>
         </button>
     ) : (
         <a
             className={'hUIButton ' + props.event + 'Button ' + props.type + (props.variant !== undefined ? 'Var' + props.variant : '')}
             style={{
-                color: props.color,
+                color: color,
                 background: props.bgcolor,
             }}
             href={props.link}
@@ -22,7 +23,7 @@ function HUIButton(props) {
             rel="noreferrer"
         >
             {props.text}
-            <Icon icon={props.icon} color={props.color} className="icon"></Icon>
+            <Icon icon={props.icon} color={color} className="icon"></Icon>
         </a>
     );
 }

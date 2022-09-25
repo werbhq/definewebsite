@@ -16,16 +16,9 @@ function Hero() {
                 </h3>
                 <br />
                 <div className="buttonContainer">
-                    <HUIButton
-                        text="Coming Soon"
-                        icon="go"
-                        event="define"
-                        type="primary"
-                        variant="1"
-                        color="var(--blasphemous-black)"
-                    ></HUIButton>
+                    <HUIButton text="Coming Soon" icon="go" event="hash" type="primary" variant="1" color="var(--witty-white)"></HUIButton>
                     <br />
-                    <HUIButton text="Stay Tuned" icon="mail" event="define" type="secondary" color="var(--youthful-yellow)"></HUIButton>
+                    <HUIButton text="Stay Tuned" icon="mail" event="hash" type="secondary" color="var(--witty-white)"></HUIButton>
                 </div>
             </div>
             <div className="heroSectionB">

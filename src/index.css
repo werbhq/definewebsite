@@ -6,6 +6,8 @@ body {
     font-family: 'ClashDisplay-variable';
     text-align: start;
     overflow: hidden;
+
+    cursor: url('./assets/images/HashCursorDefault.svg'), pointer;
 }
 
 * {
@@ -147,4 +149,5 @@ p {
     --brilliant-blue: #0075ff;
     --blasphemous-black: #25262c;
     --pretty-purple: #7b61ff;
+    --blinding-black: #181824;
 }

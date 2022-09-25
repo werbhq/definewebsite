@@ -5,7 +5,7 @@ import Hero from './hero/hero';
 
 function App() {
     return (
-        <div className="App">
+        <div className="Hash">
             {/* <Header></Header> */}
             {/* <Hero></Hero> */}
             <Construction></Construction>
