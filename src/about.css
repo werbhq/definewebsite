@@ -11,13 +11,7 @@ body {
     margin: 0;
     padding: 0;
 }
-:root {
-    --youthful-yellow: #f7fa2e;
-    --witty-white: #ffffff;
-    --proud-pink: #fb2a9b;
-    --brilliant-blue: #0075ff;
-    --blasphemous-black: #25262c;
-}
+
 .About h1 {
     font-size: 12vw;
     font-weight: 600;
