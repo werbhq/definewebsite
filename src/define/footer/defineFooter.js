@@ -41,18 +41,17 @@ function DefineFooter() {
             <div className="footerContent">
                 <div className="socialIconContainer">
                     <a href="https://twitter.com/definehack" className="socialIcons">
-                        {' '}
-                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-twitter" />
                     </a>
-                    <a href="" className="socialIcons">
-                        <i class="fa fa-linkedin"></i>
+                    <a href="." className="socialIcons">
+                        <i class="fa fa-linkedin" />
                     </a>
 
-                    <a href="" className="socialIcons">
-                        <i class="fa fa-instagram"></i>
+                    <a href="https://www.instagram.com/hashmbcet/" className="socialIcons">
+                        <i class="fa fa-instagram" />
                     </a>
-                    <a href="" className="socialIcons">
-                        <i class="fa fa-envelope"></i>
+                    <a href="." className="socialIcons">
+                        <i class="fa fa-envelope" />
                     </a>
                 </div>
                 <p>

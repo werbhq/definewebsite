@@ -7,9 +7,9 @@ function Banner({ open, content, color, isDocked }) {
                 className={
                     'banner ' +
                     (open ? 'bannerOpen' : 'bannerClosed') +
-                    (isDocked == true ? ' bannerDocked' : '') +
+                    (isDocked === true ? ' bannerDocked' : '') +
                     ' ' +
-                    (color == undefined ? 'blue' : color) +
+                    (color === undefined ? 'blue' : color) +
                     'BG'
                 }
             >
