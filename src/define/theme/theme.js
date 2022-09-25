@@ -13,7 +13,7 @@ function DefineTheme() {
     const { setBackground } = useContext(BackgroundContext);
 
     if (inView) {
-        setBackground('blackBG');
+        setBackground('blueBG');
     } else {
     }
     return (
@@ -21,19 +21,19 @@ function DefineTheme() {
             <div className="heroSectionA">
                 <h2 className="mainheading">diving into</h2>
                 <h2 className="heroheader">
-                    <span className="brilliantBlueFG">the theme</span>
+                    <span className="youthfulYellowFG">the theme</span>
                 </h2>
                 <br></br>
                 <br></br>
                 <h3 className="subheading">
                     building for
-                    <span className="brilliantBlueFG"> the real world.</span>
+                    <span className="youthfulYellowFG"> the real world.</span>
                 </h3>
                 <br />
 
                 <p className="description">
                     We’re all about building solutions that actually impact
-                    <span className="brilliantBlueFG"> real problems around the globe.</span>
+                    <span className="youthfulYellowFG"> real problems around the globe.</span>
                 </p>
                 <br></br>
                 <h3 className="subheading">more updates coming soon.</h3>
