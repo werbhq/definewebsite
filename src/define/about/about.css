@@ -1,84 +1,88 @@
 .defineAbout {
-	/* background-color: aquamarine; */
-	/* margin: 0px 100px; */
-	padding: 0px 100px;
-	color: var(--witty-white);
-	min-height: 75vh;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	row-gap: 20px;
-	/* background-color: var(--proud-pink); */
-	/* background-color: var(--blasphemous-black); */
+    /* background-color: aquamarine; */
+    /* margin: 0px 100px; */
+    padding: 0px 100px;
+    color: var(--witty-white);
+    min-height: 75vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    row-gap: 20px;
+    /* background-color: var(--proud-pink); */
+    /* background-color: var(--blasphemous-black); */
 
-	/* justify-content: space-between; */
+    /* justify-content: space-between; */
 }
 
 .defineAbout .mainheading {
-	font-family: "coolvetica-rg";
-	font-weight: 100;
-	line-height: 80%;
+    font-family: 'coolvetica-rg';
+    font-weight: 100;
+    line-height: 80%;
 }
 
 .defineAbout .subheading {
-	font-family: "coolvetica-rg";
-	letter-spacing: 0;
-	font-weight: 100;
-	line-height: 80%;
+    font-family: 'coolvetica-rg';
+    letter-spacing: 0;
+    font-weight: 100;
+    line-height: 80%;
 }
 
 .defineAbout .description {
-	font-family: "coolvetica-rg";
-	font-weight: 100;
-	letter-spacing: 0px;
-	text-align: left;
+    font-family: 'coolvetica-rg';
+    font-weight: 100;
+    letter-spacing: 0px;
+    text-align: left;
 }
 
 .defineAbout .benefits {
-	font-family: "coolvetica-rg";
-	font-weight: 100;
-	text-align: left;
+    font-family: 'coolvetica-rg';
+    font-weight: 100;
+    text-align: left;
 }
 
 .defineAbout ul {
-	list-style: none;
+    list-style: none;
 }
 
 .defineAbout li {
-	background: url("./../../assets/images/Bullet.svg") no-repeat left center;
-	padding-left: 24px; /* the width of your image + some space */
-	margin: 5px 0;
+    background: url('./../../assets/images/Bullet.svg') no-repeat left center;
+    padding-left: 24px; /* the width of your image + some space */
+    margin: 5px 0;
 }
 
 .titlesponsor {
-	font-family: "coolvetica-rg";
-	font-weight: 100;
-	letter-spacing: 0px;
-	text-transform: uppercase;
-	background-color: black;
-	display: inline-block;
+    font-family: 'coolvetica-rg';
+    font-weight: 100;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    background-color: black;
+    display: inline-block;
 }
 
 .buttonContainer {
-	display: flex;
-	column-gap: 10px;
+    display: flex;
+    column-gap: 10px;
 }
 
 @media screen and (min-width: 425px) and (max-width: 768px) {
-	.defineAbout {
-		/* background-color: aqua; */
-		padding: 50px 50px;
-		flex-direction: column;
-	}
+    .defineAbout {
+        /* background-color: aqua; */
+        padding: 50px 50px;
+        flex-direction: column;
+    }
 
-	.buttonContainer {
-		flex-direction: column;
-	}
+    .defineAbout .heroSectionA {
+        max-width: 500px;
+    }
+
+    .buttonContainer {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 425px) {
-	.defineAbout {
-		padding: 50px 25px;
-		flex-direction: column;
-	}
+    .defineAbout {
+        padding: 50px 25px;
+        flex-direction: column;
+    }
 }

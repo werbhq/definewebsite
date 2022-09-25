@@ -17,7 +17,7 @@ function DefineAbout() {
     }
     return (
         <div className="defineAbout" ref={ref}>
-            <div className="heroSectionA" style={{ maxWidth: '500px' }}>
+            <div className="heroSectionA">
                 <h2 className="mainheading">let's define</h2>
                 <h2 className="heroheader">
                     <span className="youthfulYellowFG">define.</span>

@@ -22,31 +22,33 @@ function DefineSponsors() {
 
     return (
         <div className="defineSponsors" ref={ref}>
-            {/* <h6 className="titlesponsor">Title Sponsor Name</h6> */}
-            <h2 className="mainheading">meet our</h2>
-            <h2 className="heroheader">
-                <span className="brilliantBlueFG">sponsors.</span>
-            </h2>
-            <DefineSponsorsList></DefineSponsorsList>
+            <div className="sponsorContainer">
+                {/* <h6 className="titlesponsor">Title Sponsor Name</h6> */}
+                <h2 className="mainheading">meet our</h2>
+                <h2 className="heroheader">
+                    <span className="brilliantBlueFG">sponsors.</span>
+                </h2>
+                <DefineSponsorsList></DefineSponsorsList>
 
-            <Banner
-                open={inView}
-                content={
-                    <div>
-                        <p>Calling out support for this venture. Interested?</p>
-                        <br />
-                        <HUIButton
-                            text="Sponsorship Guide"
-                            icon="go"
-                            event="define"
-                            type="primary"
-                            variant="2"
-                            color="var(--witty-white)"
-                            link="https://www.rebrand.ly/define_sponsorguide"
-                        ></HUIButton>
-                    </div>
-                }
-            ></Banner>
+                <Banner
+                    open={inView}
+                    content={
+                        <div>
+                            <p>Calling out support for this venture. Interested?</p>
+                            <br />
+                            <HUIButton
+                                text="Sponsorship Guide"
+                                icon="go"
+                                event="define"
+                                type="primary"
+                                variant="2"
+                                color="var(--witty-white)"
+                                link="https://www.rebrand.ly/define_sponsorguide"
+                            ></HUIButton>
+                        </div>
+                    }
+                ></Banner>
+            </div>
         </div>
     );
 }
