@@ -59,6 +59,11 @@
     transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+.blueBG {
+    background-color: var(--brilliant-blue);
+    transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
 .Define .inView {
     height: 120vh;
 }
