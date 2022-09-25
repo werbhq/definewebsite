@@ -1,77 +1,76 @@
 html,
 body {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "ClashDisplay-variable";
-	text-align: start;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ClashDisplay-variable';
+    text-align: start;
 }
 
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 :root {
-	--youthful-yellow: #f7fa2e;
-	--witty-white: #ffffff;
-	--proud-pink: #fb2a9b;
-	--brilliant-blue: #0075ff;
-	--blasphemous-black: #25262c;
+    --youthful-yellow: #f7fa2e;
+    --witty-white: #ffffff;
+    --proud-pink: #fb2a9b;
+    --brilliant-blue: #0075ff;
+    --blasphemous-black: #25262c;
 }
 .About h1 {
-	font-size: 12vw;
-	font-weight: 600;
+    font-size: 12vw;
+    font-weight: 600;
 }
 .About h2 {
-	font-size: 5vw;
-	line-height: 95%;
-	letter-spacing: 2px;
+    font-size: 5vw;
+    line-height: 95%;
+    letter-spacing: 2px;
 }
 .About h3 {
-	font-size: 3vw;
-	line-height: 95%;
-	letter-spacing: 2px;
+    font-size: 3vw;
+    line-height: 95%;
+    letter-spacing: 2px;
 }
 
 .About h6 {
-	font-size: 1.5vw;
+    font-size: 1.5vw;
 }
 .About {
-	background-color: var(--proud-pink);
-	width: 100vw;
-	height: 100vh;
-	margin: 0;
-	padding: 0;
-	/* overflow-y: scroll; */
+    background-color: var(--proud-pink);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 .About .youthfulYellowFG {
-	color: var(--youthful-yellow);
+    color: var(--youthful-yellow);
 }
 .plainNoise {
-	position: fixed;
-	/* left: 0px;
+    position: fixed;
+    /* left: 0px;
 	right: 0px;
 	top: 0px;
 	bottom: 0px; */
-	width: 100vw;
-	height: 100vh;
+    width: 100vw;
+    height: 100vh;
 
-	background: url("./assets/images/Plain\ Noise.png");
-	background-repeat: repeat;
-	background-size: 80%;
-	mix-blend-mode: color-dodge;
+    background: url('./assets/images/Plain\ Noise.png');
+    background-repeat: repeat;
+    background-size: 80%;
+    mix-blend-mode: color-dodge;
 }
 
 .plasticTexture {
-	position: fixed;
-	/* left: 0px;
+    position: fixed;
+    /* left: 0px;
 	right: 0px;
 	top: 0px;
 	bottom: 0px; */
-	width: 100vw;
-	height: 100vh;
+    width: 100vw;
+    height: 100vh;
 
-	background: url("./assets/images/Plastic\ Texture.png");
-	mix-blend-mode: soft-light;
-	/* transform: rotate(90deg); */
+    background: url('./assets/images/Plastic\ Texture.png');
+    mix-blend-mode: soft-light;
+    /* transform: rotate(90deg); */
 }

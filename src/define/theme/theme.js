@@ -18,7 +18,7 @@ function DefineTheme() {
     }
     return (
         <div className="defineTheme" ref={ref}>
-            <div className="heroSectionA">
+            <div className="heroSectionA" style={{ maxWidth: '500px' }}>
                 <h2 className="mainheading">diving into</h2>
                 <h2 className="heroheader">
                     <span className="brilliantBlueFG">the theme</span>
@@ -31,7 +31,7 @@ function DefineTheme() {
                 </h3>
                 <br />
 
-                <p className="description" style={{ maxWidth: '300px' }}>
+                <p className="description">
                     We’re all about building solutions that actually impact
                     <span className="brilliantBlueFG"> real problems around the globe.</span>
                 </p>

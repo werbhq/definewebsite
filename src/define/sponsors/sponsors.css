@@ -96,3 +96,7 @@
     height: 58px;
     padding: 5px;
 }
+
+.defineSponsors .bannerContainer {
+    z-index: 100 !important;
+}

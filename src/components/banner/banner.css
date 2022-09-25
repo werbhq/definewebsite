@@ -1,38 +1,60 @@
 .banner {
-	position: fixed;
-	padding: 50px 100px;
-	display: flex;
+    position: fixed;
+    padding: 50px 100px;
+    display: flex;
 
-	bottom: 0;
-	left: 0;
-	right: 0;
-	overflow: hidden;
-	transition: all 600ms cubic-bezier(0.65, 0, 0.35, 1);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    transition: all 600ms cubic-bezier(0.65, 0, 0.35, 1);
+
+    z-index: '100';
 }
-
+/* 
 .Define .banner {
-	background-color: var(--brilliant-blue);
-}
+    background-color: var(--brilliant-blue);
+} */
 
 .bannerClosed {
-	max-height: 0px;
-	padding: 0px 100px;
+    max-height: 0px;
+    padding: 0px 100px;
 
-	/* display: none; */
+    /* display: none; */
 }
 
 .bannerOpen {
-	width: 100%;
-	max-height: 50vh;
+    width: 100%;
+    max-height: 50vh;
+}
+
+.bannerDocked {
+    position: static;
+    bottom: auto;
+}
+
+.bannerContainer {
+    position: relative;
 }
 
 @media screen and (max-width: 768px) {
-	.banner {
-		padding: 50px 25px;
-	}
+    .banner {
+        padding: 50px 50px;
+    }
 
-	.bannerClosed {
-		padding: 0px 25px;
-		/* display: none; */
-	}
+    .bannerClosed {
+        padding: 0px 50px;
+        /* display: none; */
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .banner {
+        padding: 50px 25px;
+    }
+
+    .bannerClosed {
+        padding: 0px 25px;
+        /* display: none; */
+    }
 }
