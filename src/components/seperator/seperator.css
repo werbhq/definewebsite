@@ -1,5 +1,6 @@
 .defineSeperator {
-	width: 100%;
-	height: 2px;
-	background-color: var(--blasphemous-black);
+    width: 100%;
+    height: 2px;
+    background-color: var(--blasphemous-black);
+    visibility: hidden;
 }

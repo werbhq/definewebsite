@@ -53,11 +53,11 @@
 }
 
 .Define .primaryVar1 {
-    background-color: var(--youthful-yellow);
-    color: var(--blasphemous-black);
+    background: var(--youthful-yellow) !important;
+    color: var(--blasphemous-black) !important;
 
     border: none;
-    border-bottom: 2px solid var(--proud-pink);
+    border-bottom: 2px solid var(--proud-pink) !important;
     box-shadow: 0px 5px var(--proud-pink);
 }
 
@@ -83,6 +83,8 @@
     color: var(--youthful-yellow);
 
     border: 2px solid var(--youthful-yellow);
+    text-decoration: none;
+
     border-bottom: 2px solid var(--youthful-yellow);
     box-shadow: 0px 5px var(--youthful-yellow);
 }
@@ -97,12 +99,12 @@
     }
 
     .hUIButton:hover > .icon {
-        transform: rotate(-15deg) scale(1.2);
+        transform: rotate(-15deg) scale(1.1);
         transition-duration: 700ms;
     }
 
     .Define .defineButton:hover {
-        transform: translateY(-3px) scale(1.05);
+        transform: translateY(-3px) scale(1.05) !important;
     }
 
     .Hash .primaryVar1:hover {
@@ -131,12 +133,14 @@
     }
 
     .Define .secondary:hover {
+        background: none !important;
+        color: var(--youthful-yellow) !important;
         box-shadow: 0px 8px var(--youthful-yellow);
     }
 }
 
 .Define .defineButton:active {
-    transform: translateY(3px) scale(0.95);
+    transform: translateY(3px) scale(0.95) !important;
     transition-duration: 700ms;
 }
 
