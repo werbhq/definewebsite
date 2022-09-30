@@ -2,13 +2,8 @@ import DefineSeperator from '../../components/seperator/seperator';
 import SponsorItem from './sponsorItem';
 
 var data = [
-    { imageKey: 'GitHub', imagePath: 'GitHub.svg', URL: 'https://www.github.com', type: 'gold' },
-    { imageKey: 'Devfolio', imagePath: 'Devfolio.svg', URL: 'https://devfolio.co/', type: 'platinum' },
-    { imageKey: 'Polygon', imagePath: 'Polygon.svg', URL: 'https://polygon.technology/', type: 'platinum' },
-    { imageKey: 'Solana', imagePath: 'Solana.svg', URL: 'https://solana.com/', type: 'platinum' },
-    { imageKey: 'Filecoin', imagePath: 'Filecoin.svg', URL: 'https://filecoin.io/', type: 'platinum' },
-    { imageKey: 'Replit', imagePath: 'Replit.png', URL: 'https://replit.com/', type: 'platinum' },
     { imageKey: 'Wolfram', imagePath: 'Wolfram.svg', URL: 'https://www.wolfram.com/', type: 'gold' },
+    { imageKey: 'GitHub', imagePath: 'GitHub.svg', URL: 'https://www.github.com', type: 'gold' },
     { imageKey: 'Echo3D', imagePath: 'echo3D.png', URL: 'https://www.echo3d.co/', type: 'gold' },
     { imageKey: 'Voiceflow', imagePath: 'voiceflow.png', URL: 'https://www.voiceflow.com/', type: 'gold' },
     { imageKey: 'FossUnited', imagePath: 'FOSSUnited.svg', URL: 'https://fossunited.org', type: 'silver' },
@@ -40,7 +35,6 @@ function DefineSponsorsList() {
 
     for (const i in precedenceOrder) {
         const tempList = [];
-        tempList.push();
 
         for (const e of data) {
             if (e.type === precedenceOrder[i]) {
@@ -49,7 +43,6 @@ function DefineSponsorsList() {
         }
 
         if (tempList.length !== 0) {
-            listFull.push(<h3>{precedenceOrder[i]}</h3>);
             listFull.push(<div className="sponsorTier">{tempList}</div>);
             listFull.push(<DefineSeperator></DefineSeperator>);
         }

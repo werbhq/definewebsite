@@ -6,7 +6,6 @@ body {
     font-family: 'ClashDisplay-variable';
     text-align: start;
     overflow: hidden;
-    position: relative;
 
     cursor: url('./assets/images/HashCursorDefault.svg'), pointer;
 }

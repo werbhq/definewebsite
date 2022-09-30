@@ -75,7 +75,7 @@
     background: url('./../assets/images/Plain\ Noise.png');
     background-repeat: repeat;
     background-size: 80%;
-    opacity: 45%;
+    opacity: 60%;
     mix-blend-mode: color-dodge;
     z-index: 999;
 }
