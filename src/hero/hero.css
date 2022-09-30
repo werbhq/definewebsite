@@ -1,4 +1,4 @@
-.Hash .hero {
+.hero {
     /* background-color: aquamarine; */
     padding: 50px 100px;
     color: var(--witty-white);
@@ -8,6 +8,7 @@
     padding-top: 130px;
     align-items: center;
     row-gap: 20px;
+    background-color: var(--blinding-black);
     /* justify-content: space-between; */
 }
 

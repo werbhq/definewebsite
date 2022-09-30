@@ -8,9 +8,9 @@ function Hero() {
     return (
         <div className={'hero'}>
             <div className="heroSectionA">
-                {/* <div className="backgroundImage">
+                <div className="backgroundImage">
                     <img src={BGImage} alt="" />
-                </div> */}
+                </div>
                 {/* <h6 className="titlesponsor">Title Sponsor Name</h6> */}
 
                 <h1 className="heroheader">HASH</h1>

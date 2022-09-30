@@ -8,8 +8,8 @@ function App() {
         <div className="Hash">
             {/* <Header></Header> */}
             {/* <Hero></Hero> */}
-            {/* <Construction></Construction> */}
-            <Define></Define>
+//             <Construction></Construction>
+             <Define></Define>
         </div>
     );
 }
