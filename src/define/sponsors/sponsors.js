@@ -9,7 +9,7 @@ import DefineSponsorsList from './sponsorsList';
 function DefineSponsors() {
     const { ref, inView } = useInView({
         /* Optional options */
-        threshold: 0.5,
+        threshold: 0.3,
     });
 
     const { setBackground } = useContext(BackgroundContext);
