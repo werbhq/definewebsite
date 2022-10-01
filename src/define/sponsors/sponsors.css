@@ -41,6 +41,7 @@
     flex-wrap: wrap;
     /* justify-content: center; */
     max-width: 100%;
+    flex-direction: column;
     /* background-color: wheat; */
 }
 
