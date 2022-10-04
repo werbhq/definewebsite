@@ -10,9 +10,6 @@ function DefineFooter() {
         threshold: 0.2,
     });
 
-    // if (inView) {
-    //     setBackground('blackBG');
-    // }
     return (
         <div className="defineFooter" ref={ref}>
             <Banner

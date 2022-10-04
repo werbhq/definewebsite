@@ -1,5 +1,4 @@
 import './navbar.css';
-import defineLogo from './../../assets/images/defineLogoPink.svg';
 import HUIButton from '../button/button';
 import { React, useContext, useState } from 'react';
 import DefineLogo from '../../define/defineLogo/defineLogo';

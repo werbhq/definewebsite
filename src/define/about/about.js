@@ -1,20 +1,23 @@
 import './../about/about.css';
 import AboutTree from './../../assets/images/about_pic.png';
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { BackgroundContext } from '../define';
 import { useInView } from 'react-intersection-observer';
 
 function DefineAbout() {
     const { ref, inView } = useInView({
         /* Optional options */
-        threshold: 0.6,
+        threshold: 0.75,
     });
 
     const { setBackground } = useContext(BackgroundContext);
 
-    if (inView) {
-        setBackground('pinkBG');
-    }
+    useEffect(() => {
+        if (inView) {
+            setBackground('pinkBG');
+        }
+    }, [inView, setBackground]);
+
     return (
         <div className="defineAbout" ref={ref}>
             <div className="heroSectionA">

@@ -1,21 +1,23 @@
 import './../theme/theme.css';
 import AboutGlobe from './../../assets/images/DefineGlobe.png';
 import { BackgroundContext } from '../define';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 function DefineTheme() {
-    const { ref, inView, entry } = useInView({
+    const { ref, inView } = useInView({
         /* Optional options */
         threshold: 0.6,
     });
 
     const { setBackground } = useContext(BackgroundContext);
 
-    if (inView) {
-        setBackground('blueBG');
-    } else {
-    }
+    useEffect(() => {
+        if (inView) {
+            setBackground('blueBG');
+        }
+    }, [inView, setBackground]);
+
     return (
         <div className="defineTheme" ref={ref}>
             <div className="heroSectionA">

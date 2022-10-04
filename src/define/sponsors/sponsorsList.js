@@ -50,7 +50,7 @@ function DefineSponsorsList() {
         if (tempList.length !== 0) {
             listFull.push(<h3>{precedenceOrder[i]}</h3>);
             listFull.push(<div className="sponsorTier">{tempList}</div>);
-            listFull.push(<DefineSeperator></DefineSeperator>);
+            listFull.push(<DefineSeperator />);
         }
     }
 

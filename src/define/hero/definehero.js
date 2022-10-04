@@ -2,7 +2,7 @@ import HUIButton from '../../components/button/button';
 import './../hero/definehero.css';
 import LightBulbImage from './../../assets/images/defineLightBulbVideo.gif';
 import { BackgroundContext } from '../define';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 function DefineHero() {
@@ -13,9 +13,11 @@ function DefineHero() {
 
     const { setBackground } = useContext(BackgroundContext);
 
-    if (inView) {
-        setBackground('blackBG');
-    }
+    useEffect(() => {
+        if (inView) {
+            setBackground('blackBG');
+        }
+    }, [inView, setBackground]);
 
     return (
         <div className={'hero'} ref={ref}>
