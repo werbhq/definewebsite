@@ -2,7 +2,7 @@ import DefineSeperator from '../../components/seperator/seperator';
 import SponsorItem from './sponsorItem';
 
 var data = [
-    { imageKey: 'Devfolio', imagePath: 'Devfolio.svg', URL: 'https://www.devfolio.com/', type: 'platinum' },
+    { imageKey: 'Devfolio', imagePath: 'Devfolio.svg', URL: 'https://www.devfolio.co/', type: 'platinum' },
     { imageKey: 'Polygon', imagePath: 'Polygon.svg', URL: 'https://polygon.technology/', type: 'platinum' },
     { imageKey: 'GitHub', imagePath: 'GitHub.svg', URL: 'https://www.github.com', type: 'gold' },
     { imageKey: 'Replit', imagePath: 'Replit.png', URL: 'https://replit.com/', type: 'gold' },
