@@ -28,7 +28,7 @@ var data = [
     {
         imageKey: 'Werb',
         imagePath: 'werb.svg',
-        URL: 'https://attendoindia.netlify.app/',
+        URL: 'https://attendo-gcp.web.app/',
         type: 'technical',
     },
 ];
