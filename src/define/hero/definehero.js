@@ -1,4 +1,3 @@
-import HUIButton from '../../components/button/button';
 import './../hero/definehero.css';
 import LightBulbImage from './../../assets/images/defineLightBulbVideo.gif';
 import { BackgroundContext } from '../define';
@@ -19,6 +18,17 @@ function DefineHero() {
         }
     }, [inView, setBackground]);
 
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.src = 'https://apply.devfolio.co/v2/sdk.js';
+        script.async = true;
+        script.defer = true;
+        document.body.appendChild(script);
+        return () => {
+            document.body.removeChild(script);
+        };
+    }, []);
+
     return (
         <div className={'hero'} ref={ref}>
             <div className="heroSectionA">
@@ -31,7 +41,11 @@ function DefineHero() {
                     </span>
                 </h3>
                 <br />
-                <div className="buttonContainer">
+
+                <div className="apply-button" data-hackathon-slug="definehack" data-button-theme="dark-inverted"></div>
+
+                {/* Old Button */}
+                {/* <div className="buttonContainer">
                     <HUIButton
                         text="Coming Soon"
                         icon="go"
@@ -42,7 +56,7 @@ function DefineHero() {
                     ></HUIButton>
                     <br />
                     <HUIButton text="Stay Tuned" icon="mail" event="define" type="secondary" color="var(--youthful-yellow)"></HUIButton>
-                </div>
+                </div> */}
             </div>
             <div className="heroSectionB">
                 <img src={LightBulbImage} alt="" />
