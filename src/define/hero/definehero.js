@@ -3,7 +3,6 @@ import LightBulbImage from './../../assets/images/defineLightBulbVideo.gif';
 import { BackgroundContext } from '../define';
 import { useContext, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
-import HUIButton from '../../components/button/button';
 
 function DefineHero() {
     const { ref, inView } = useInView({
@@ -43,8 +42,10 @@ function DefineHero() {
                 </h3>
                 <br />
 
+                <div className="apply-button" data-hackathon-slug="definehack" data-button-theme="dark-inverted"></div>
+
                 {/* Old Button */}
-                <div className="buttonContainer">
+                {/* <div className="buttonContainer">
                     <HUIButton
                         text="Coming Soon"
                         icon="go"
@@ -55,9 +56,7 @@ function DefineHero() {
                     ></HUIButton>
                     <br />
                     <HUIButton text="Stay Tuned" icon="mail" event="define" type="secondary" color="var(--youthful-yellow)"></HUIButton>
-                </div>
-
-                <div className="apply-button" data-hackathon-slug="definehack" data-button-theme="dark-inverted"></div>
+                </div> */}
             </div>
             <div className="heroSectionB">
                 <img src={LightBulbImage} alt="" />
