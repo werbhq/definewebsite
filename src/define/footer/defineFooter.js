@@ -1,7 +1,5 @@
 import './defineFooter.css';
 import './../hero/definehero.css';
-import { BackgroundContext } from '../define';
-import { useContext } from 'react';
 import { useInView } from 'react-intersection-observer';
 import Banner from '../../components/banner/banner';
 import HUIButton from '../../components/button/button';
@@ -11,8 +9,6 @@ function DefineFooter() {
         /* Optional options */
         threshold: 0.2,
     });
-
-    const { setBackground } = useContext(BackgroundContext);
 
     // if (inView) {
     //     setBackground('blackBG');
@@ -41,17 +37,17 @@ function DefineFooter() {
             <div className="footerContent">
                 <div className="socialIconContainer">
                     <a href="https://twitter.com/definehack" className="socialIcons">
-                        <i class="fa fa-twitter" />
+                        <i className="fa fa-twitter" />
                     </a>
                     <a href="." className="socialIcons">
-                        <i class="fa fa-linkedin" />
+                        <i className="fa fa-linkedin" />
                     </a>
 
                     <a href="https://www.instagram.com/hashmbcet/" className="socialIcons">
-                        <i class="fa fa-instagram" />
+                        <i className="fa fa-instagram" />
                     </a>
                     <a href="." className="socialIcons">
-                        <i class="fa fa-envelope" />
+                        <i className="fa fa-envelope" />
                     </a>
                 </div>
                 <p>
