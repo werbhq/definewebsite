@@ -1,9 +1,7 @@
-import { HashAbout } from "./about/about";
+import HashHero from './hero/hero';
 
 function Hash() {
-    return (
-        <HashAbout></HashAbout>
-    );
+    return <HashHero></HashHero>;
 }
 
 export default Hash;
