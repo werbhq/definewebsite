@@ -1,13 +1,17 @@
-import { HashAbout } from './about/about';
 import HashHero from './hero/hero';
 import HashAbout from './about/about';
+import './hash.css';
+import Header from './../header/header';
+{
+    /* <Header></Header>; */
+}
 
 function Hash() {
     return (
-        <div>
-            <p>hello</p>
-            <HashAbout></HashAbout>
-            <HashHero></HashHero>;
+        <div className="Hash">
+            <HashHero></HashHero>
+            {/* <HashAbout></HashAbout>
+            <HashHero></HashHero>; */}
         </div>
     );
 }

@@ -1,5 +1,129 @@
-.hero {
-    background-color: aqua;
+.Hash .HashHero {
+    background: url('./../../assets/images/HashHeroBackground.png') var(--blinding-black);
+    background-position: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    box-shadow: 0px 0px 0px 405px 0px var(--blinding-black) inset;
+    position: relative;
+}
+
+.Hash .HashHero .logo {
+    width: 100%;
+    max-width: 500px;
+    min-width: 250px;
+}
+
+.Hash .HashHero {
+    /* background-color: aquamarine; */
+    padding: 50px 100px;
+    color: var(--witty-white);
+    /* min-height: 75vh; */
+    display: flex;
+    flex-direction: row;
+    padding-top: 130px;
+    align-items: center;
+    row-gap: 20px;
+    /* background-color: var(--blasphemous-black); */
+    /* justify-content: space-between; */
+}
+
+.Hash .HashHero .heroSectionA {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 30px;
+    width: 100%;
+}
+
+.Hash .HashHero .heroSectionB {
+    display: block;
+    width: 75%;
+    transform: translateY(-40px);
+    /* background-color: aquamarine; */
+}
+
+.Hash .HashHero .heroSectionB {
+    mix-blend-mode: lighten;
+}
+
+.Hash .HashHero .heroSectionB img {
+    width: 100%;
+}
+
+.Hash .HashHero .tagline {
+    font-family: 'coolvetica-rg';
+    font-weight: 100;
+    letter-spacing: 0px !important;
+    text-align: left;
+}
+
+.Hash .HashHero .taglinecontainer {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.Hash .HashHero .datecontainer {
+    background-color: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(50px);
+    border-radius: 0 10px 10px 0;
+    padding: 10px 20px;
+    border-left: 5px var(--youthful-yellow) solid;
+}
+
+.Hash .HashHero .titlesponsor {
+    font-family: 'coolvetica-rg';
+    font-weight: 100;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    background-color: black;
+    display: inline-block;
+}
+
+.Hash .HashHero .buttonContainer {
+    display: flex;
+    column-gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .Hash .HashHero {
+        /* background-color: aqua; */
+        padding: 100px 50px;
+        margin-top: 20vh;
+        flex-direction: column;
+    }
+
+    .Hash .HashHero .taglinecontainer {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .Hash .HashHero .datecontainer {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .Hash .HashHero .heroSectionA {
+        order: 1;
+        display: inline-flex;
+        width: fit-content;
+        /* background-color: aquamarine; */
+    }
+
+    .Hash .HashHero .heroSectionB {
+        order: 0;
+        width: 50%;
+        transform: translate(0px);
+    }
+
+    .Hash .HashHero .buttonContainer {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .HashHero {
+        padding: 50px 25px;
+        flex-direction: column;
+    }
 }

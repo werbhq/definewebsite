@@ -8,13 +8,21 @@ body {
     overflow: hidden;
     position: relative;
 
-    /* cursor: url('./assets/images/HashCursorDefault.svg'), pointer; */
+    cursor: url('./assets/images/HashCursorDefault.svg'), pointer;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.App {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 @media (hover: hover) {
@@ -150,5 +158,5 @@ p {
     --brilliant-blue: #0075ff;
     --blasphemous-black: #25262c;
     --pretty-purple: #7b61ff;
-    --blinding-black: #181824;
+    --blinding-black: #09060d;
 }
