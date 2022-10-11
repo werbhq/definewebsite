@@ -1,5 +1,5 @@
 import LightBulbImage from './../../assets/images/defineLightBulbVideo.gif';
-import { BackgroundContext } from '../define';
+import { BackgroundContext } from './../../App';
 import { useContext, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
