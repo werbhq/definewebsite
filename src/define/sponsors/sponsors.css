@@ -80,6 +80,12 @@
     border: 0%;
 }
 
+.sponsorItemTitle {
+    width: 270px;
+    height: 126px;
+    padding: 20px;
+}
+
 .sponsorItemPlatinum {
     width: 225px;
     height: 105px;
