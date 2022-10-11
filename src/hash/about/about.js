@@ -30,4 +30,4 @@ function HashAbout() {
     );
 }
 
-export { HashAbout };
+export default HashAbout;
