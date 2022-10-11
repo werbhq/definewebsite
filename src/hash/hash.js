@@ -1,3 +1,4 @@
+import { HashAbout } from './about/about';
 import HashHero from './hero/hero';
 import HashAbout from './about/about';
 
