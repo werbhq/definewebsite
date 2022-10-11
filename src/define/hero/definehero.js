@@ -34,12 +34,23 @@ function DefineHero() {
             <div className="heroSectionA">
                 {/* <h6 className="titlesponsor">Title Sponsor Name</h6> */}
                 <h1 className="heroheader">define.</h1>
-                <h3 className="tagline">
-                    <span>build for the</span>
-                    <span className="youthfulYellowFG">
-                        <br /> real world.
-                    </span>
-                </h3>
+                <div className="taglinecontainer">
+                    <h3 className="tagline">
+                        <span>build for the</span>
+                        <span className="youthfulYellowFG">
+                            <br /> real world.
+                        </span>
+                    </h3>
+                    <div className="datecontainer">
+                        <h3 className="tagline">
+                            <span className="youthfulYellowFG">5 - 6</span>
+                            <span>
+                                <br />
+                                Nov
+                            </span>
+                        </h3>
+                    </div>
+                </div>
                 <br />
 
                 <div className="apply-button" data-hackathon-slug="definehack" data-button-theme="dark-inverted"></div>

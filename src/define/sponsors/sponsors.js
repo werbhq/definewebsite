@@ -30,7 +30,7 @@ function DefineSponsors() {
                 </h2>
                 <DefineSponsorsList />
 
-                <Banner
+                {/* <Banner
                     open={inView}
                     content={
                         <div>
@@ -47,7 +47,7 @@ function DefineSponsors() {
                             ></HUIButton>
                         </div>
                     }
-                ></Banner>
+                ></Banner> */}
             </div>
         </div>
     );
