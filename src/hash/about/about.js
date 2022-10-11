@@ -26,6 +26,7 @@ function HashAbout() {
                 </p>
             </div>
             <div className="heroSectionB">
+                <div className="mask"></div>
                 <img src={HashAudience} alt="" />
             </div>
         </div>
