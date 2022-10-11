@@ -1,130 +1,154 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "ClashDisplay-variable";
-  text-align: start;
-  overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ClashDisplay-variable';
+    text-align: start;
+    overflow: hidden;
+    position: relative;
+
+    /* cursor: url('./assets/images/HashCursorDefault.svg'), pointer; */
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 @media (hover: hover) {
-  /* width */
-  ::-webkit-scrollbar {
-    width: 20px;
-    display: block;
-    z-index: 999;
-  }
-  /* Track */
-  .Define::-webkit-scrollbar-track {
-    background-color: var(--proud-pink);
-  }
+    /* width */
+    ::-webkit-scrollbar {
+        width: 20px;
+        display: block;
+        z-index: 999;
+    }
+    /* Track */
+    .Define::-webkit-scrollbar-track {
+        background-color: var(--proud-pink);
+    }
 
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: var(--youthful-yellow);
-  }
-}
-
-@font-face {
-  font-family: "ClashDisplay-Variable";
-  src: local("ClashDisplay-Variable"),
-    url("./assets/fonts/ClashDisplay/ClashDisplay-Variable.ttf")
-      format("truetype");
-  font-weight: 200 700;
-  font-display: swap;
-  font-style: normal;
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: var(--youthful-yellow);
+    }
 }
 
 @font-face {
-  font-family: "ClashDisplay-Extralight";
-  src: local("ClashDisplay-Extralight")
-    url("./assets/fonts/ClashDisplay/ClashDisplay-Extralight.otf")
-    format("opentype");
-  font-weight: 200;
-  font-display: swap;
-  font-style: normal;
+    font-family: 'ClashDisplay-Variable';
+    src: local('ClashDisplay-Variable'), url('./assets/fonts/ClashDisplay/ClashDisplay-Variable.ttf') format('truetype');
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "ClashDisplay-Light";
-  src: local("ClashDisplay-Light")
-    url("./assets/fonts/ClashDisplay/ClashDisplay-Light.otf") format("opentype");
-  font-weight: 300;
-  font-display: swap;
-  font-style: normal;
+    font-family: 'ClashDisplay-Extralight';
+    src: local('ClashDisplay-Extralight') url('./assets/fonts/ClashDisplay/ClashDisplay-Extralight.otf') format('opentype');
+    font-weight: 200;
+    font-display: swap;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "ClashDisplay-Regular";
-  src: local("ClashDisplay-Regular")
-    url("./assets/fonts/ClashDisplay/ClashDisplay-Regular.otf")
-    format("opentype");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
+    font-family: 'ClashDisplay-Light';
+    src: local('ClashDisplay-Light') url('./assets/fonts/ClashDisplay/ClashDisplay-Light.otf') format('opentype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "ClashDisplay-Medium";
-  src: local("ClashDisplay-Medium")
-    url("./assets/fonts/ClashDisplay/ClashDisplay-Medium.otf")
-    format("opentype");
-  font-weight: 500;
-  font-display: swap;
-  font-style: normal;
+    font-family: 'ClashDisplay-Regular';
+    src: local('ClashDisplay-Regular') url('./assets/fonts/ClashDisplay/ClashDisplay-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "ClashDisplay-Semibold";
-  src: local("ClashDisplay-Semibold")
-    url("./assets/fonts/ClashDisplay/ClashDisplay-Semibold.otf")
-    format("opentype");
-  font-weight: 600;
-  font-display: swap;
-  font-style: normal;
+    font-family: 'ClashDisplay-Medium';
+    src: local('ClashDisplay-Medium') url('./assets/fonts/ClashDisplay/ClashDisplay-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "ClashDisplay-Bold";
-  src: local("ClashDisplay-Bold")
-    url("./assets/fonts/ClashDisplay/ClashDisplay-Bold.otf") format("opentype");
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
+    font-family: 'ClashDisplay-Semibold';
+    src: local('ClashDisplay-Semibold') url('./assets/fonts/ClashDisplay/ClashDisplay-Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "coolvetica-rg";
-  font-weight: 500;
-  src: url("./assets/fonts/coolvetica/coolvetica\ rg.otf");
+    font-family: 'ClashDisplay-Bold';
+    src: local('ClashDisplay-Bold') url('./assets/fonts/ClashDisplay/ClashDisplay-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
 }
 
- h1 {
-  font-size: 12vw;
-  font-weight: 600;
-}
- h2 {
-  font-size: 5vw;
-  line-height: 95%;
-  letter-spacing: 2px;
-}
- h3 {
-  font-size: 3vw;
-  line-height: 95%;
-  letter-spacing: 2px;
+@font-face {
+    font-family: 'coolvetica-rg';
+    font-weight: 500;
+    src: url('./assets/fonts/coolvetica/coolvetica\ rg.otf');
 }
 
- h6 {
-  font-size: 1.5vw;
+h1 {
+    font-size: 10vw;
+    font-weight: 600;
 }
 
-.youthfulYellowFG {
-  color: var(--youthful-yellow);
+h2 {
+    font-size: 5vw;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 3.5vw;
+    line-height: 95%;
+    letter-spacing: 2px;
+}
+
+h6 {
+    font-size: 1.5vw;
+}
+
+p {
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    h6 {
+        font-size: 10px;
+    }
+
+    .p {
+        font-size: 18px;
+    }
+}
+
+:root {
+    --youthful-yellow: #f7fa2e;
+    --witty-white: #ffffff;
+    --proud-pink: #fb2a9b;
+    --brilliant-blue: #0075ff;
+    --blasphemous-black: #25262c;
+    --pretty-purple: #7b61ff;
+    --blinding-black: #181824;
 }
