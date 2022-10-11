@@ -105,3 +105,26 @@ body {
   font-weight: 500;
   src: url("./assets/fonts/coolvetica/coolvetica\ rg.otf");
 }
+
+ h1 {
+  font-size: 12vw;
+  font-weight: 600;
+}
+ h2 {
+  font-size: 5vw;
+  line-height: 95%;
+  letter-spacing: 2px;
+}
+ h3 {
+  font-size: 3vw;
+  line-height: 95%;
+  letter-spacing: 2px;
+}
+
+ h6 {
+  font-size: 1.5vw;
+}
+
+.youthfulYellowFG {
+  color: var(--youthful-yellow);
+}
