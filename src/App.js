@@ -1,5 +1,6 @@
 import { Define } from './define/define';
 import Hash from './hash/hash';
+import React, { useState, createContext } from 'react';
 
 const BackgroundContext = createContext();
 const NavbarContext = createContext();
@@ -12,4 +13,4 @@ function App() {
     return <div className="App">{isDefine ? <Define></Define> : <Hash></Hash>}</div>;
 }
 
-export default App;
+export { App, BackgroundContext, NavbarContext };
