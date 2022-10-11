@@ -1,5 +1,7 @@
+import HashHero from './hero/hero';
+
 function Hash() {
-    return <div>njn aan hash</div>;
+    return <HashHero></HashHero>;
 }
 
 export default Hash;
