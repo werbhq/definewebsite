@@ -1,11 +1,11 @@
-import { Define } from "./define/define";
+import { Define } from './define/define';
 
 function App() {
-  return (
-    <div className="App">
-      <Define></Define>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Define />
+        </div>
+    );
 }
 
 export default App;
