@@ -19,12 +19,14 @@ function Define() {
     useEffect(() => {
         const loader = document.getElementById('loader');
         if (loader) {
-            loader.style.display = 'none';
-            setLoading(false);
+            setTimeout(() => {
+                loader.style.display = 'none';
+                setLoading(false);
+            }, 4000);
         }
     }, [isLoading, setLoading]);
 
-    return isLoading ? null : (
+    return (
         <NavbarContext.Provider value={{ active, setActive }}>
             <BackgroundContext.Provider value={{ background, setBackground }}>
                 <div className={'Define ' + background}>
