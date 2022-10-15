@@ -28,6 +28,7 @@ function DefineSponsors() {
                 <h2 className="heroheader">
                     <span className={inView ? 'brilliantBlueFG' : 'youthfulYellowFG'}>sponsors.</span>
                 </h2>
+                <br></br>
                 <DefineSponsorsList />
 
                 {/* <Banner

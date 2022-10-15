@@ -1,5 +1,5 @@
 import './../theme/theme.css';
-import AboutGlobe from './../../assets/images/DefineGlobe.png';
+import AboutGlobe from './../../assets/images/defineglobe.gif';
 import { BackgroundContext } from '../define';
 import { useContext, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';

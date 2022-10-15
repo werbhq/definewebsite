@@ -1,0 +1,62 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #121212;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loaderLogo {
+    background-color: #57beb9;
+    width: 100px;
+    border-radius: 100%;
+    -moz-box-shadow: 1px 2px 30px #57beb925;
+    -webkit-box-shadow: 1px 2px 30px#57beb925;
+    box-shadow: 1px 2px 30px #57beb925;
+    -webkit-animation: rotate 4s ease-in-out infinite;
+    -moz-animation: rotate 4s ease-in-out infinite;
+    animation: rotate 4s ease-in-out infinite;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes rotate {
+    100% {
+        -moz-transform: rotateY(360deg);
+    }
+}
+@-webkit-keyframes rotate {
+    100% {
+        -webkit-transform: rotateY(360deg);
+    }
+}
+@keyframes rotate {
+    100% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
