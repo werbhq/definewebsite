@@ -1,5 +1,5 @@
 import './../about/about.css';
-import AboutTree from './../../assets/images/about_pic.png';
+import AboutTree from './../../assets/images/definetree.gif';
 import React, { useContext, useEffect } from 'react';
 import { BackgroundContext } from '../define';
 import { useInView } from 'react-intersection-observer';
