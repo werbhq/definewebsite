@@ -26,13 +26,13 @@ function DefineAbout() {
                     <span className="youthfulYellowFG">define.</span>
                 </h2>
                 <p className="description">
-                    Define is a 24-hour offline hackathon to channelise your creative minds and bring out solutions for
+                    Define is a 24-hour offline hackathon to channelise your creative minds and to bring out solutions for
                     <span className="youthfulYellowFG"> real-world problems.</span>
                 </p>
                 <br />
                 <h3 className="subheading">
                     in short,
-                    <span className="youthfulYellowFG"> a chance to</span>
+                    <span className="youthfulYellowFG"> your chance to</span>
                 </h3>
                 <br />
                 <ul className="benefits">
