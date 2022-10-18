@@ -57,6 +57,12 @@ var data = [
         URL: 'https://clusterdev.com/',
         type: 'title',
     },
+    {
+        imageKey: 'Balsamiq',
+        imagePath: 'balsamiq.png',
+        URL: 'https://balsamiq.com/',
+        type: 'educational',
+    },
 ];
 
 var precedenceOrder = ['title', 'platinum', 'gold', 'silver', 'educational', 'technical'];
