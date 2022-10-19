@@ -1,5 +1,6 @@
 import './../hero/definehero.css';
 import LightBulbImage from './../../assets/images/defineLightBulbVideo.gif';
+import ClusterDevLogo from './../../assets/images/clusterdev.svg';
 import { BackgroundContext } from '../define';
 import { useContext, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
@@ -32,7 +33,7 @@ function DefineHero() {
     return (
         <div className={'hero'} ref={ref}>
             <div className="heroSectionA">
-                {/* <h6 className="titlesponsor">Title Sponsor Name</h6> */}
+                <img width={'250px'} src={ClusterDevLogo}></img>
                 <h1 className="heroheader">define.</h1>
                 <div className="taglinecontainer">
                     <h3 className="tagline">
