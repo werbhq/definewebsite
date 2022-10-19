@@ -53,7 +53,7 @@ var data = [
     },
     {
         imageKey: 'ClusterDev',
-        // imagePath: 'clusterdev-logo.svg',
+        imagePath: 'clusterdev-logo.svg',
         URL: 'https://clusterdev.com/',
         type: 'title',
     },
