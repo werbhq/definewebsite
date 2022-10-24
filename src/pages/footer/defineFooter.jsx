@@ -43,7 +43,7 @@ function DefineFooter() {
                     <a href="https://www.instagram.com/hashmbcet/" className="socialIcons">
                         <i className="fa fa-instagram" />
                     </a>
-                    <a href="." className="socialIcons">
+                    <a href="mailto:hash@mbcet.ac.in" className="socialIcons">
                         <i className="fa fa-envelope" />
                     </a>
                 </div>

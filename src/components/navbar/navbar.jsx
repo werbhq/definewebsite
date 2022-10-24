@@ -1,13 +1,13 @@
 import './navbar.css';
 import HUIButton from '../button/button';
 import { React, useContext, useState } from 'react';
-import DefineLogo from '../../define/defineLogo/defineLogo';
+import DefineLogo from '../../pages/defineLogo/defineLogo';
 import hashBurger from './../../assets/images/hashBurger.svg';
-import { NavbarContext } from '../../define/define';
+import NavBarContext from '../../context/NavBarContext';
 
 function Navbar(props) {
-    const { active, setActive } = useContext(NavbarContext);
-    const [navActive, setNavActive] = useState(active);
+    const { active, setActive } = useContext(NavBarContext);
+    const [, setNavActive] = useState(active);
 
     return (
         <div className="NavBarContainer">

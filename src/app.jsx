@@ -1,4 +1,4 @@
-import { Define } from './define/define';
+import { Define } from './pages/define';
 
 function App() {
     return (

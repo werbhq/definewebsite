@@ -1,15 +1,14 @@
 import './header.css';
+import React, { useContext } from 'react';
 import HUIButton from '../components/button/button';
 import hashLogo from './../assets/images/hashlogo White.svg';
 import hashIcon from './../assets/images/hashLogomark.svg';
 import hashBurger from './../assets/images/hashBurger.svg';
-import { NavbarContext } from '../define/define';
-
-import React, { useContext } from 'react';
-import DefineLogo from '../define/defineLogo/defineLogo';
+import DefineLogo from '../pages/defineLogo/defineLogo';
+import NavBarContext from '../context/NavBarContext';
 
 function Header() {
-    const { active, setActive } = useContext(NavbarContext);
+    const { active, setActive } = useContext(NavBarContext);
     return (
         <div>
             <div className="header">

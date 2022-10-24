@@ -1,15 +1,14 @@
-import Header from './../header/header.js';
+import Header from './../header/header';
 import './define.css';
-import DefineHero from './hero/definehero.js';
+import DefineHero from './hero/definehero';
 import DefineAbout from './about/about';
-import DefineTheme from './theme/theme.js';
-import DefineFooter from './footer/defineFooter.js';
-import Navbar from './../components/navbar/navbar.js';
-import React, { useState, createContext, useEffect } from 'react';
-import DefineSponsors from './sponsors/sponsors.js';
-
-const BackgroundContext = createContext();
-const NavbarContext = createContext();
+import DefineTheme from './theme/theme';
+import DefineFooter from './footer/defineFooter';
+import Navbar from './../components/navbar/navbar';
+import React, { useState, useEffect } from 'react';
+import DefineSponsors from './sponsors/sponsors';
+import NavBarContext from '../context/NavBarContext';
+import BackgroundContext from '../context/BackgroundContext';
 
 function Define() {
     const [background, setBackground] = useState('blackBG');
@@ -27,7 +26,7 @@ function Define() {
     }, [isLoading, setLoading]);
 
     return (
-        <NavbarContext.Provider value={{ active, setActive }}>
+        <NavBarContext.Provider value={{ active, setActive }}>
             <BackgroundContext.Provider value={{ background, setBackground }}>
                 <div className={'Define ' + background}>
                     <Header />
@@ -43,8 +42,8 @@ function Define() {
                     {/* <HUIButton text="Coming Soon" icon="go"></HUIButton> */}
                 </div>
             </BackgroundContext.Provider>
-        </NavbarContext.Provider>
+        </NavBarContext.Provider>
     );
 }
 
-export { Define, BackgroundContext, NavbarContext };
+export { Define, BackgroundContext, NavBarContext };

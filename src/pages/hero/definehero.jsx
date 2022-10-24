@@ -33,7 +33,7 @@ function DefineHero() {
     return (
         <div className={'hero'} ref={ref}>
             <div className="heroSectionA">
-                <img width={'250px'} src={ClusterDevLogo}></img>
+                <img width={'250px'} src={ClusterDevLogo} alt="clusterDev"></img>
                 <h1 className="heroheader">define.</h1>
                 <div className="taglinecontainer">
                     <h3 className="tagline">

@@ -1,8 +1,6 @@
-import HUIButton from '../../components/button/button';
 import { BackgroundContext } from '../define';
 import { useContext, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
-import Banner from '../../components/banner/banner';
 import './sponsors.css';
 import DefineSponsorsList from './sponsorsList';
 

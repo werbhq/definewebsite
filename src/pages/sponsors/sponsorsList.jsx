@@ -13,7 +13,6 @@ var data = [
     { imageKey: 'Voiceflow', imagePath: 'voiceflow.png', URL: 'https://www.voiceflow.com/', type: 'gold' },
     { imageKey: 'FossUnited', imagePath: 'FOSSUnited.svg', URL: 'https://fossunited.org', type: 'silver' },
     { imageKey: 'Taskade', imagePath: 'taskade.svg', URL: 'https://www.taskade.com/', type: 'silver' },
-    // { imageKey: 'ICFoss', imagePath: 'icfoss.svg', URL: 'https://icfoss.in/', type: 'silver' },
     {
         imageKey: 'InterviewCake',
         URL: 'https://www.interviewcake.com/',
