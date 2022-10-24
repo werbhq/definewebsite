@@ -13,17 +13,15 @@ import BackgroundContext from '../context/BackgroundContext';
 function Define() {
     const [background, setBackground] = useState('blackBG');
     const [active, setActive] = useState(false);
-    const [isLoading, setLoading] = useState(true);
 
     useEffect(() => {
         const loader = document.getElementById('loader');
         if (loader) {
             setTimeout(() => {
                 loader.style.display = 'none';
-                setLoading(false);
             }, 4000);
         }
-    }, [isLoading, setLoading]);
+    }, []);
 
     return (
         <NavBarContext.Provider value={{ active, setActive }}>
