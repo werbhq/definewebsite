@@ -16,26 +16,16 @@ function Header() {
                     <img className="hashLogoDesktop" src={hashLogo} alt="HASH Logo"></img>
                     <img className="hashLogoMobile" src={hashIcon} alt="HASH Icon"></img>
                 </div>
-                <img
-                    className="hamburger"
-                    onClick={() => {
-                        console.log('hey' + active);
-                        setActive(!active);
-                    }}
-                    alt="Hash Burger"
-                    src={hashBurger}
-                ></img>
+                <img className="hamburger" onClick={() => setActive(!active)} alt="Hash Burger" src={hashBurger}></img>
                 <ul className="navbarList">
                     <li>
-                        <a href="https://define.hashmbcet.tech/" target={'_blank'} rel="noreferrer">
-                            <DefineLogo />
-                        </a>
+                        <DefineLogo />
                     </li>
                     <li>Schedule</li>
                     <li>FAQs</li>
                     <li>Contact</li>
                     <HUIButton
-                        text="Coming Soon!"
+                        text="Register Now"
                         icon="hashIcon"
                         event="define"
                         type="primary"
