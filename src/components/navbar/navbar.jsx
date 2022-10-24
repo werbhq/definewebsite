@@ -21,7 +21,7 @@ function Navbar(props) {
                     <li>FAQs</li>
                     <li>Contact</li>
                     <HUIButton
-                        text="Coming Soon!"
+                        text="Register Now"
                         icon="hashIcon"
                         event="define"
                         type="primary"
