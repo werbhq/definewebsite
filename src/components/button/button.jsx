@@ -6,6 +6,7 @@ function HUIButton(props) {
         <button
             className={'hUIButton ' + props.event + 'Button ' + props.type + (props.variant !== undefined ? 'Var' + props.variant : '')}
             style={{ color: props.color, background: props.bgcolor }}
+            onClick={props.onClick}
         >
             {props.text}
             <Icon icon={props.icon} color={props.color} className="icon"></Icon>

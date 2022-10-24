@@ -32,7 +32,7 @@
 
 .navbarList li:hover {
     color: var(--youthful-yellow);
-    cursor: url('./../assets/images/CursorPointingHand.svg'), pointer;
+    cursor: url('../../assets/images/CursorPointingHand.svg'), pointer;
 }
 
 .hamburger {

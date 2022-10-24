@@ -9,6 +9,11 @@ function Navbar(props) {
     const { active, setActive } = useContext(NavBarContext);
     const [, setNavActive] = useState(active);
 
+    const openDevFolio = () => {
+        const devfolioContainer = document.getElementById('devfolio-overlay-container');
+        if (devfolioContainer) devfolioContainer.style.display = 'block';
+    };
+
     return (
         <div className="NavBarContainer">
             <div className={active ? 'NavBar' : 'NavBar closed'}>
@@ -27,6 +32,7 @@ function Navbar(props) {
                         type="primary"
                         variant="1"
                         color="var(--blasphemous-black)"
+                        onClick={openDevFolio}
                     />
                 </ul>
             </div>

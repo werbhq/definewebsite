@@ -1,4 +1,3 @@
-import Header from './../header/header';
 import './define.css';
 import DefineHero from './hero/definehero';
 import DefineAbout from './about/about';
@@ -9,6 +8,7 @@ import React, { useState, useEffect } from 'react';
 import DefineSponsors from './sponsors/sponsors';
 import NavBarContext from '../context/NavBarContext';
 import BackgroundContext from '../context/BackgroundContext';
+import Header from '../components/header/header';
 
 function Define() {
     const [background, setBackground] = useState('blackBG');
