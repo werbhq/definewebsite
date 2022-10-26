@@ -36,7 +36,7 @@ function DefineFooter() {
                     <a href="https://twitter.com/definehack" className="socialIcons">
                         <i className="fa fa-twitter" />
                     </a>
-                    <a href="." className="socialIcons">
+                    <a href="https://www.linkedin.com/company/definehack/" className="socialIcons">
                         <i className="fa fa-linkedin" />
                     </a>
 
