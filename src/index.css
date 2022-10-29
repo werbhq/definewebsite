@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'ClashDisplay-variable';
     text-align: start;
     overflow: hidden;
     position: relative;
@@ -29,17 +28,27 @@ body {
     /* width */
     ::-webkit-scrollbar {
         width: 20px;
-        display: block;
-        z-index: 999;
+        z-index: 9999;
     }
     /* Track */
     .Define::-webkit-scrollbar-track {
         background-color: var(--proud-pink);
     }
 
+    .Hash::-webkit-scrollbar-track {
+        background-color: var(--blinding-black);
+    }
+
     /* Handle */
-    ::-webkit-scrollbar-thumb {
+    .Define::-webkit-scrollbar-thumb {
         background: var(--youthful-yellow);
+    }
+
+    .Hash::-webkit-scrollbar-thumb {
+        background: var(--pretty-purple);
+        border-left: 2px solid var(--witty-white);
+        box-shadow: inset 1px 0px 0.5px var(--witty-white), inset 2px 0px 10px var(--perky-pink), inset -3px 0px 10px var(--benign-blue),
+            0px 2px 100px var(--pretty-purple);
     }
 }
 
@@ -105,6 +114,26 @@ body {
     src: url('./assets/fonts/coolvetica/coolvetica\ rg.otf');
 }
 
+@font-face {
+    font-family: 'Satoshi-Variable';
+    src: url('./assets/fonts/Satoshi/Satoshi-Variable.woff2') format('woff2'),
+        url('./assets/fonts/Satoshi/Satoshi-Variable.woff') format('woff'),
+        url('./assets/fonts/Satoshi/Satoshi-Variable.ttf') format('truetype');
+    font-weight: 300 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi-VariableItalic';
+    src: url('./assets/fonts/Satoshi/Satoshi-VariableItalic.woff2') format('woff2'),
+        url('./assets/fonts/Satoshi/Satoshi-VariableItalic.woff') format('woff'),
+        url('./assets/fonts/Satoshi/Satoshi-VariableItalic.ttf') format('truetype');
+    font-weight: 300 900;
+    font-display: swap;
+    font-style: italic;
+}
+
 h1 {
     font-size: 10vw;
     font-weight: 600;
@@ -157,6 +186,9 @@ p {
     --proud-pink: #fb2a9b;
     --brilliant-blue: #0075ff;
     --blasphemous-black: #25262c;
-    --pretty-purple: #7b61ff;
+    --pretty-purple: #9747ff;
+    --picky-purple: #7b61ff;
     --blinding-black: #09060d;
+    --perky-pink: #ee778b;
+    --benign-blue: #3fcdec;
 }
