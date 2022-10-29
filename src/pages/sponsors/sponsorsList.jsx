@@ -62,9 +62,52 @@ var data = [
         URL: 'https://balsamiq.com/',
         type: 'educational',
     },
+    {
+        imageKey: 'UST Global',
+        imagePath: 'ust.png',
+        URL: 'https://www.ust.com/',
+        type: 'platinum',
+    },
+    {
+        imageKey: 'TinkerHub',
+        imagePath: 'tinkerhub.png',
+        URL: 'https://tinkerhub.org/',
+        type: 'community',
+    },
+    {
+        imageKey: 'GTech Mulearn',
+        imagePath: 'µLearn.png',
+        URL: 'https://mulearn.org/',
+        type: 'community',
+    },
+    {
+        imageKey: 'GDSC MBCET',
+        imagePath: 'gdsc_logo.svg',
+        URL: 'https://gdscmbcet.com/',
+        type: 'community',
+    },
+    {
+        imageKey: 'csi',
+        imagePath: 'csi.jpg',
+        URL: 'https://mbcet.ac.in/home/professional-socities/computer-society-of-india/',
+        type: 'community',
+    },
+    {
+        imageKey: 'ieeembcet',
+        imagePath: 'ieeembcet.png',
+        URL: 'https://www.ieeesbmbcet.in/',
+        type: 'community',
+    },
+    {
+        imageKey: 'ietcmbcet',
+        imagePath: 'ietc.jpg',
+        URL: 'https://mbcet.ac.in/innovation-entrepreneurship/iedc-innovation-entrepreneurship-development-centre/',
+        type: 'community',
+    },
 ];
 
-var precedenceOrder = ['title', 'platinum', 'gold', 'silver', 'educational', 'technical'];
+const precedenceOrder = ['title', 'platinum', 'gold', 'silver', 'educational', 'community', 'technical'];
+const displayText = ['title', 'platinum', 'gold', 'silver', 'educational partners', 'community partners', 'technical partner'];
 
 function DefineSponsorsList() {
     var listFull = [];
@@ -79,7 +122,7 @@ function DefineSponsorsList() {
         }
 
         if (tempList.length !== 0) {
-            listFull.push(<h3>{precedenceOrder[i]}</h3>);
+            listFull.push(<h3>{displayText[i]}</h3>);
             listFull.push(<div className="sponsorTier">{tempList}</div>);
             listFull.push(<DefineSeperator />);
         }
