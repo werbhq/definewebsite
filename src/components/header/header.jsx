@@ -10,11 +10,6 @@ import NavBarContext from '../../context/NavBarContext';
 function Header() {
     const { active, setActive } = useContext(NavBarContext);
 
-    const openDevFolio = () => {
-        const devfolioContainer = document.getElementById('devfolio-overlay-container');
-        if (devfolioContainer) devfolioContainer.style.display = 'block';
-    };
-
     return (
         <div>
             <div className="header">
@@ -30,15 +25,6 @@ function Header() {
                     <li>Schedule</li>
                     <li>FAQs</li>
                     <li>Contact</li>
-                    <HUIButton
-                        text="Register Now"
-                        icon="hashIcon"
-                        event="define"
-                        type="primary"
-                        variant="1"
-                        color="var(--blasphemous-black)"
-                        onClick={openDevFolio}
-                    ></HUIButton>
                 </ul>
                 <div className="headerBackground"></div>
             </div>

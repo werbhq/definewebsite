@@ -4,6 +4,7 @@ import ClusterDevLogo from './../../assets/images/clusterdev.svg';
 import { BackgroundContext } from '../define';
 import { useContext, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
+import HUIButton from '../../components/button/button';
 
 function DefineHero() {
     const { ref, inView } = useInView({
@@ -18,17 +19,6 @@ function DefineHero() {
             setBackground('blackBG');
         }
     }, [inView, setBackground]);
-
-    useEffect(() => {
-        const script = document.createElement('script');
-        script.src = 'https://apply.devfolio.co/v2/sdk.js';
-        script.async = true;
-        script.defer = true;
-        document.body.appendChild(script);
-        return () => {
-            document.body.removeChild(script);
-        };
-    }, []);
 
     return (
         <div className={'hero'} ref={ref}>
@@ -54,21 +44,16 @@ function DefineHero() {
                 </div>
                 <br />
 
-                <div className="apply-button" data-hackathon-slug="definehack" data-button-theme="dark-inverted"></div>
-
-                {/* Old Button */}
-                {/* <div className="buttonContainer">
+                <div className="buttonContainer">
                     <HUIButton
-                        text="Coming Soon"
-                        icon="go"
+                        text="Applications Closed"
+                        icon="hashIcon"
                         event="define"
                         type="primary"
                         variant="1"
                         color="var(--blasphemous-black)"
                     ></HUIButton>
-                    <br />
-                    <HUIButton text="Stay Tuned" icon="mail" event="define" type="secondary" color="var(--youthful-yellow)"></HUIButton>
-                </div> */}
+                </div>
             </div>
             <div className="heroSectionB">
                 <img src={LightBulbImage} alt="" />
