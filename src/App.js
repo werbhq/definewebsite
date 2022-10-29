@@ -6,7 +6,7 @@ import Header from './header/header';
 const BackgroundContext = createContext();
 const NavbarContext = createContext();
 
-var isDefine = true;
+var isDefine = false;
 
 function App() {
     const [background, setBackground] = useState('blackBG');
