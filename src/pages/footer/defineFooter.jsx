@@ -40,7 +40,7 @@ function DefineFooter() {
                         <i className="fa fa-linkedin" />
                     </a>
 
-                    <a href="https://www.instagram.com/hashmbcet/" className="socialIcons">
+                    <a href="https://www.instagram.com/definehack/" className="socialIcons">
                         <i className="fa fa-instagram" />
                     </a>
                     <a href="mailto:hash@mbcet.ac.in" className="socialIcons">
