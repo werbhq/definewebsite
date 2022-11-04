@@ -104,10 +104,25 @@ var data = [
         URL: 'https://mbcet.ac.in/innovation-entrepreneurship/iedc-innovation-entrepreneurship-development-centre/',
         type: 'community',
     },
+    {
+        imageKey: 'aws',
+        imagePath: 'aws.png',
+        URL: 'https://awsugkochi.in/',
+        type: 'cloud',
+    },
 ];
 
-const precedenceOrder = ['title', 'platinum', 'gold', 'silver', 'educational', 'community', 'technical'];
-const displayText = ['title', 'platinum', 'gold', 'silver', 'educational partners', 'community partners', 'technical partner'];
+const precedenceOrder = ['title', 'platinum', 'gold', 'silver', 'cloud', 'educational', 'community', 'technical'];
+const displayText = [
+    'title',
+    'platinum',
+    'gold',
+    'silver',
+    'cloud partner',
+    'educational partners',
+    'community partners',
+    'technical partner',
+];
 
 function DefineSponsorsList() {
     var listFull = [];
